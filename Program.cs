@@ -1,3 +1,10 @@
+using System;
+using ProjCondominios.Models;
+using ProjCondominios.Enums;
+using ProjCondominios.Services;
+
+
+
 namespace ProjCondominios
 {
     internal static class Program
@@ -11,7 +18,7 @@ namespace ProjCondominios
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new MenuPrincipal());
         }
     }
 }

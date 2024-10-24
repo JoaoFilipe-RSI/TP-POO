@@ -1,9 +1,6 @@
 C:\Users\fferreira\source\repos\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.exe
-C:\Users\fferreira\source\repos\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.deps.json
-C:\Users\fferreira\source\repos\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.runtimeconfig.json
 C:\Users\fferreira\source\repos\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.dll
-C:\Users\fferreira\source\repos\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.pdb
-C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.Form1.resources
+C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.MenuPrincipal.resources
 C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.csproj.GenerateResource.cache
 C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.AssemblyInfoInputs.cache
@@ -12,5 +9,8 @@ C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ProjCon
 C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.dll
 C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\refint\ProjCondominios.dll
 C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.pdb
+C:\Users\fferreira\source\repos\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.deps.json
+C:\Users\fferreira\source\repos\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.runtimeconfig.json
+C:\Users\fferreira\source\repos\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.pdb
 C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.genruntimeconfig.cache
 C:\Users\fferreira\source\repos\ProjCondominios\obj\Debug\net8.0-windows\ref\ProjCondominios.dll
