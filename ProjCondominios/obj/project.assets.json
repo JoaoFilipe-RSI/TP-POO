@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fferreira\\source\\repos\\ProjCondominios\\ProjCondominios.csproj",
+      "projectUniqueName": "C:\\ProjetoCondominios\\ProjCondominios\\ProjCondominios.csproj",
       "projectName": "ProjCondominios",
-      "projectPath": "C:\\Users\\fferreira\\source\\repos\\ProjCondominios\\ProjCondominios.csproj",
+      "projectPath": "C:\\ProjetoCondominios\\ProjCondominios\\ProjCondominios.csproj",
       "packagesPath": "C:\\Users\\fferreira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fferreira\\source\\repos\\ProjCondominios\\obj\\",
+      "outputPath": "C:\\ProjetoCondominios\\ProjCondominios\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fferreira\\AppData\\Roaming\\NuGet\\NuGet.Config",

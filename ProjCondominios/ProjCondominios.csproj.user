@@ -4,8 +4,5 @@
     <Compile Update="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TP-POO\MenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

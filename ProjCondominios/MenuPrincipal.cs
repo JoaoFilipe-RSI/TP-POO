@@ -31,5 +31,25 @@ namespace ProjCondominios
         {
             Application.Exit();
         }
+
+        private void pagamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deUmCondóminoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emitirFaturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adicionarNovoMoradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
