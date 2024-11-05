@@ -3,29 +3,85 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjCondominios.Models;
+using ProjCondominios.Enums;
 
 namespace ProjCondominios.Models
 {
     public class Pagamento
     {
+        #region Propriedades Privadas
+
+        private decimal valorQuota;
+        private string descricao;
+        private Condominio condominio;
+        private Condomino condomino;
+        private DateTime dataHoraPagamento;
+
+        #endregion
+
         #region Propriedades Públicas
-        public int Id { get; private set; }
-        public decimal Valor { get; set; }
-        public string Descricao { get; set; }
-        public DateTime Data { get; private set; }
+        public Guid Id { get; private set; }
+
+
+        public decimal ValorQuota
+        {
+            get => valorQuota;
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentException("O valor da quota deve ser maior que zero.");
+                valorQuota = value;
+            }
+        }
+
+        public string Descricao
+        {
+            get => descricao;
+            set => descricao = value;
+        }
+
+        public Condominio Condominio
+        {
+            get => condominio;
+            set => condominio = value;
+        }
+
+        public Condomino Condomino
+        {
+            get => condomino;
+            set => condomino = value;
+        }
+
+        public DateTime DataHoraPagamento
+        {
+            get => dataHoraPagamento;
+            set => dataHoraPagamento = value;
+        }
+
         #endregion
 
         #region Construtores
-        public Pagamento(int id, decimal valor, string descricao)
+
+        public Pagamento(decimal valorQuota, string descricao, Condominio condominio, Condomino condomino, DateTime dataHoraPagamento)
         {
-            Id = id;
-            Valor = valor;
+            Id = Guid.NewGuid();
+            ValorQuota = valorQuota;
             Descricao = descricao;
-            Data = DateTime.Now;
+            Condominio = condominio;
+            Condomino = condomino;
+            DataHoraPagamento = dataHoraPagamento;
         }
+
         #endregion
 
         #region Métodos
+
+        public override string ToString()
+        {
+            return $"ID: {Id}, Valor: {ValorQuota:C}, Mês: {Descricao}, Condomínio: {Condominio.Nome}, Condómino: {Condomino.Nome}, Data: {DataHoraPagamento}";
+        }
+
         #endregion
     }
 }

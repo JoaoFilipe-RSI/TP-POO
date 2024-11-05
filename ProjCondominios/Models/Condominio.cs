@@ -10,30 +10,48 @@ namespace ProjCondominios.Models
     public class Condominio
     {
         #region Propriedades Privadas
-        private List<Morador> moradores;
-        private List<Reserva> reservas;
+
+        private List<Condomino> condominos;
+
+        private List<FracaoAutonoma> _fracoes = new List<FracaoAutonoma>();
+
         #endregion
 
         #region Propriedades Públicas
-        public int Id { get; private set; }
+
         public string Nome { get; set; }
         public string Endereco { get; set; }
-        public TipoCondominio Tipo { get; set; }
+        public TipoCondominio TipoCondominio { get; set; }
+        public List<Condomino> Condominos => condominos;
+        public IEnumerable<FracaoAutonoma> Fracoes => _fracoes;
+
         #endregion
 
         #region Construtores
-        public Condominio(int id, string nome, string endereco, TipoCondominio tipo)
+
+        public Condominio(string nome, string endereco, TipoCondominio tipoCondominio)
         {
-            Id = id;
             Nome = nome;
             Endereco = endereco;
-            Tipo = tipo;
-            moradores = new List<Morador>();
-            reservas = new List<Reserva>();
+            TipoCondominio = tipoCondominio;
+            condominos = new List<Condomino>();
         }
+
         #endregion
 
         #region Métodos
+
+        public void AdicionarCondomino(Condomino condomino) => condominos.Add(condomino);
+        public void RemoverCondomino(Condomino condomino) => condominos.Remove(condomino);
+
+        public void AdicionarFracao(FracaoAutonoma fracao)
+        {
+            _fracoes.Add(fracao);
+        }
+        public void RemoverFracao(FracaoAutonoma fracao)
+        {
+            _fracoes.Remove(fracao);
+        }
         #endregion
     }
 }

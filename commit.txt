@@ -1,0 +1,15 @@
+1º - Fechar Visual Studio
+
+2º - Abrir CMD (admin) na pasta do projeto
+
+
+C:\ProjetoCondominios>git init
+
+C:\ProjetoCondominios>git add .
+
+C:\ProjetoCondominios>git commit -m "ALTERAÇÕES"
+
+C:\ProjetoCondominios>git push https://github.com/JoaoFilipe-RSI/TP-POO.git master
+
+
+
