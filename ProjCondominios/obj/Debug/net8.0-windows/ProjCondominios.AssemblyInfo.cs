@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjCondominios")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d25459a800ac3ba3ff20cc8a95235c8b92d44a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c167b3b70fd0b2c7d246c15820cd5a625e262a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjCondominios")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjCondominios")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
