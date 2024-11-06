@@ -1,5 +1,6 @@
 ESTRUTURA BASE
 
-![image](https://github.com/user-attachments/assets/0c206447-e6ba-4d25-bccf-9b851aefa953)
+![image](https://github.com/user-attachments/assets/3b971dcd-86d6-41e0-925f-c945b7d6194e)
+
 
 
