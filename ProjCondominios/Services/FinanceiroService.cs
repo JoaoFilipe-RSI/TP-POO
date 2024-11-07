@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ProjCondominios.Models;
 using ProjCondominios.Enums;
-using ProjCondominios.Services;
 using ProjCondominios.Interfaces;
+using CalculadoraFinanceira; // Referência à DLL
 
 
 namespace ProjCondominios.Services
@@ -17,16 +17,19 @@ namespace ProjCondominios.Services
 
         private readonly PagamentoService _pagamentoService;
         private readonly DespesaService _despesaService;
+        private readonly CalculosFinanceirosService _calculadoraFinanceira;
 
         #endregion
 
         #region Construtores
 
-        public FinanceiroService(PagamentoService pagamentoService, DespesaService despesaService)
+        public FinanceiroService(PagamentoService pagamentoService, DespesaService despesaService, CalculosFinanceirosService calculadoraFinanceira)
         {
             _pagamentoService = pagamentoService ?? throw new ArgumentNullException(nameof(pagamentoService));
             _despesaService = despesaService ?? throw new ArgumentNullException(nameof(despesaService));
+            _calculadoraFinanceira = calculadoraFinanceira ?? new CalculosFinanceirosService();
         }
+
 
         #endregion
 
@@ -87,6 +90,15 @@ namespace ProjCondominios.Services
             return relatorio;
         }
 
+
+
+        // Método para calcular o total de despesas e receitas
+        public decimal CalcularBalancoFinanceiro(List<decimal> receitas, List<decimal> despesas)
+        {
+            decimal totalReceitas = _calculadoraFinanceira.CalcularTotal(receitas);
+            decimal totalDespesas = _calculadoraFinanceira.CalcularTotal(despesas);
+            return totalReceitas - totalDespesas;
+        }
         #endregion
 
 

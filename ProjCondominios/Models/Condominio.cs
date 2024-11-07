@@ -22,6 +22,7 @@ namespace ProjCondominios.Models
         public string Nome { get; set; }
         public string Endereco { get; set; }
         public TipoCondominio TipoCondominio { get; set; }
+        public decimal OrcamentoAnual { get; set; }
         public List<Condomino> Condominos => condominos;
         public IEnumerable<FracaoAutonoma> Fracoes => _fracoes;
 
@@ -29,11 +30,12 @@ namespace ProjCondominios.Models
 
         #region Construtores
 
-        public Condominio(string nome, string endereco, TipoCondominio tipoCondominio)
+        public Condominio(string nome, string endereco, TipoCondominio tipoCondominio, decimal orcamentoAnual)
         {
             Nome = nome;
             Endereco = endereco;
             TipoCondominio = tipoCondominio;
+            OrcamentoAnual = orcamentoAnual;
             condominos = new List<Condomino>();
         }
 

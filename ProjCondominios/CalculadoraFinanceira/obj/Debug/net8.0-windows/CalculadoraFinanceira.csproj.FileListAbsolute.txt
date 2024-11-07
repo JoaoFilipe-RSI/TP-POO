@@ -1,0 +1,12 @@
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\bin\Debug\net8.0-windows\CalculadoraFinanceira.deps.json
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\bin\Debug\net8.0-windows\CalculadoraFinanceira.dll
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\bin\Debug\net8.0-windows\CalculadoraFinanceira.pdb
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\obj\Debug\net8.0-windows\CalculadoraFinanceira.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\obj\Debug\net8.0-windows\CalculadoraFinanceira.AssemblyInfoInputs.cache
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\obj\Debug\net8.0-windows\CalculadoraFinanceira.AssemblyInfo.cs
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\obj\Debug\net8.0-windows\CalculadoraFinanceira.csproj.CoreCompileInputs.cache
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\obj\Debug\net8.0-windows\CalculadoraFinanceira.sourcelink.json
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\obj\Debug\net8.0-windows\CalculadoraFinanceira.dll
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\obj\Debug\net8.0-windows\refint\CalculadoraFinanceira.dll
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\obj\Debug\net8.0-windows\CalculadoraFinanceira.pdb
+C:\ProjetoCondominios\ProjCondominios\CalculadoraFinanceira\obj\Debug\net8.0-windows\ref\CalculadoraFinanceira.dll
