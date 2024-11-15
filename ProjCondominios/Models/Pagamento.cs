@@ -17,12 +17,10 @@ namespace ProjCondominios.Models
         private Condominio condominio;
         private Condomino condomino;
         private DateTime dataHoraPagamento;
-
         #endregion
 
         #region Propriedades Públicas
         public Guid Id { get; private set; }
-
 
         public decimal ValorQuota
         {

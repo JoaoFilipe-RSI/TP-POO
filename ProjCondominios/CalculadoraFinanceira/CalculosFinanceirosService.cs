@@ -49,7 +49,6 @@ namespace CalculadoraFinanceira
                 return $"Atenção: Pagamento em atraso há {-diasRestantes} dias.";
         }
 
-
         public decimal CalcularTotal(List<decimal> valores)
         {
             decimal total = 0;
@@ -59,7 +58,7 @@ namespace CalculadoraFinanceira
             }
             return total;
         }
-
+        
         // Outros métodos...
     }
 }

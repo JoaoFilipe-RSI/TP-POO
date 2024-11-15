@@ -15,13 +15,11 @@ namespace ProjCondominios.Services
         #region Propriedades Privadas
 
         private List<Condominio> _condominios;
-
         #endregion
 
         #region Propriedades Públicas
 
         public IEnumerable<Condominio> Condominios => _condominios;
-
         #endregion
 
         #region Construtores
@@ -30,7 +28,6 @@ namespace ProjCondominios.Services
         {
             _condominios = new List<Condominio>();
         }
-
         #endregion
 
         #region Métodos
@@ -59,7 +56,6 @@ namespace ProjCondominios.Services
             var areasFracoes = condominio.Fracoes.Select(fracao => fracao.Area);
             return CalculosFinanceirosService.CalcularAreaTotalCondominio(areasFracoes);
         }
-
         #endregion
     }
 }

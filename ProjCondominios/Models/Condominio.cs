@@ -14,9 +14,7 @@ namespace ProjCondominios.Models
         private List<Condomino> condominos;
 
         private List<FracaoAutonoma> _fracoes = new List<FracaoAutonoma>();
-
         #endregion
-
         #region Propriedades Públicas
 
         public string Nome { get; set; }
@@ -25,9 +23,7 @@ namespace ProjCondominios.Models
         public decimal OrcamentoAnual { get; set; }
         public List<Condomino> Condominos => condominos;
         public IEnumerable<FracaoAutonoma> Fracoes => _fracoes;
-
         #endregion
-
         #region Construtores
 
         public Condominio(string nome, string endereco, TipoCondominio tipoCondominio, decimal orcamentoAnual)
@@ -38,9 +34,7 @@ namespace ProjCondominios.Models
             OrcamentoAnual = orcamentoAnual;
             condominos = new List<Condomino>();
         }
-
         #endregion
-
         #region Métodos
 
         public void AdicionarCondomino(Condomino condomino) => condominos.Add(condomino);

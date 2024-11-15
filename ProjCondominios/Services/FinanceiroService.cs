@@ -30,7 +30,6 @@ namespace ProjCondominios.Services
             _calculadoraFinanceira = calculadoraFinanceira ?? new CalculosFinanceirosService();
         }
 
-
         #endregion
 
         #region Métodos
@@ -43,9 +42,8 @@ namespace ProjCondominios.Services
 
             decimal totalPagamentos = ObterTotalPagamentos(condominio);
             decimal totalDespesas = ObterTotalDespesas(condominio);
-
-            // Saldo 
-            return totalPagamentos - totalDespesas;
+          
+            return totalPagamentos - totalDespesas;   // Saldo 
         }
 
         // Obter total de pagamentos para o condomínio especificado através do serviço de pagamentos
@@ -76,6 +74,14 @@ namespace ProjCondominios.Services
             return totalDespesas;
         }
 
+        // Método para calcular o total de despesas e receitas de todos os condominios
+        public decimal CalcularBalancoFinanceiro(List<decimal> receitas, List<decimal> despesas)
+        {
+            decimal totalReceitas = _calculadoraFinanceira.CalcularTotal(receitas);
+            decimal totalDespesas = _calculadoraFinanceira.CalcularTotal(despesas);
+            return totalReceitas - totalDespesas;
+        }
+
         // Método para gerar um relatório financeiro básico do condomínio
         public string GerarRelatorioFinanceiro(Condominio condominio)
         {
@@ -89,22 +95,10 @@ namespace ProjCondominios.Services
 
             return relatorio;
         }
-
-
-
-        // Método para calcular o total de despesas e receitas
-        public decimal CalcularBalancoFinanceiro(List<decimal> receitas, List<decimal> despesas)
-        {
-            decimal totalReceitas = _calculadoraFinanceira.CalcularTotal(receitas);
-            decimal totalDespesas = _calculadoraFinanceira.CalcularTotal(despesas);
-            return totalReceitas - totalDespesas;
-        }
         #endregion
-
 
         // Relatórios detalhados por período (por exemplo, despesas e receitas mensais).
         // Notificações de saldo negativo, caso as despesas superem os pagamentos.
-        // Exportação de relatórios em formatos como PDF ou Excel.
 
     }
 }

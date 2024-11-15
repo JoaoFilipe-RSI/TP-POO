@@ -9,14 +9,12 @@ namespace ProjCondominios.Models
 {
     public class Despesa
     {
-
         #region Propriedades Privadas
 
         private TipoDespesa tipo;
         private decimal valor;
         private Condominio condominio;
         private DateTime dataHoraDespesa;
-
         #endregion
 
         #region Propriedades Públicas
@@ -49,7 +47,6 @@ namespace ProjCondominios.Models
             get => dataHoraDespesa;
             set => dataHoraDespesa = value;
         }
-
         #endregion
 
         #region Construtores
@@ -61,7 +58,6 @@ namespace ProjCondominios.Models
             Valor = valor;
             Condominio = condominio ?? throw new ArgumentNullException(nameof(condominio));
         }
-
         #endregion
 
         #region Métodos

@@ -13,6 +13,7 @@ namespace ProjCondominios.Interfaces
         string GerarRelatorioDespesas();
         string GerarRelatorioReservas();
         string GerarRelatorioFinanceiro();
+        string GerarAtaReuniao(Reuniao reuniao);
     }
 }
 

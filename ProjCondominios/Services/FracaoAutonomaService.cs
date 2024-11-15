@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ProjCondominios.Models;
 using CalculadoraFinanceira;
+using ProjCondominios.Enums;
 
 namespace ProjCondominios.Services
 {
@@ -15,7 +16,6 @@ namespace ProjCondominios.Services
         //private readonly CalculosFinanceirosService _calculadoraFinanceira;
         #endregion
 
-
         #region Construtor
 
         public FracaoAutonomaService(List<FracaoAutonoma> fracoes)
@@ -25,16 +25,15 @@ namespace ProjCondominios.Services
 
         #endregion
 
-
         #region Métodos
 
         // Método para adicionar uma fração autónoma
-        public void AdicionarFracao(string identificacao, decimal area, decimal permilagem, decimal quota, Condominio condominio, Condomino proprietario, Condomino? inquilino = null)
+        public void AdicionarFracao(string identificacao, decimal area, decimal permilagem, decimal quota, TipoFracao tipoFracao, Condominio condominio, Condomino proprietario, Condomino? inquilino = null)
         {
             if (string.IsNullOrEmpty(identificacao) || permilagem <= 0 || condominio == null || proprietario == null)
                 throw new ArgumentException("Dados inválidos. Identificação, permilagem, condomínio e proprietário são obrigatórios.");
 
-            FracaoAutonoma novaFracao = new FracaoAutonoma(identificacao, area, permilagem, quota, condominio, proprietario, inquilino);
+            FracaoAutonoma novaFracao = new FracaoAutonoma(identificacao, area, permilagem, quota, tipoFracao, condominio, proprietario, inquilino);
             _fracoes.Add(novaFracao);
         }
 
@@ -86,8 +85,6 @@ namespace ProjCondominios.Services
             return true;
         }
 
-
-
         // Método para calcular e atribuir a permilagem para cada fração em um condomínio específico
         public void CalcularPermilagensParaCondominio(Condominio condominio)
         {
@@ -116,7 +113,6 @@ namespace ProjCondominios.Services
             }
         }
 
-
         // Método para calcular multa por atraso de pagamento
         public decimal CalcularMultaAtrasoPagamento(FracaoAutonoma fracao, int diasAtraso, decimal taxaMultaDiaria)
         {
@@ -128,7 +124,6 @@ namespace ProjCondominios.Services
         {
             return CalculosFinanceirosService.GerarNotificacaoPagamento(dataVencimento);
         }
-
         #endregion
     }
 }

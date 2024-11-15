@@ -10,13 +10,15 @@ namespace ProjCondominios.Enums
     {
         Residencial,
         Comercial,
+        Industrial,
         Misto
     }
     public enum TipoFracao
     {
         Residencia,
+        Garagem,
         Loja,
-        Garagem
+        Pavilhão
     }
 
     public enum TipoDespesa

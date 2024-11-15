@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjCondominios.Enums;
 
 namespace ProjCondominios.Models
 {
@@ -14,6 +15,7 @@ namespace ProjCondominios.Models
         public decimal Area { get; set; }
         public decimal Permilagem { get; set; }
         public decimal Quota { get; set; }
+        public TipoFracao TipoFracao { get; set; }
         public Condominio Condominio { get; set; }
         public Condomino Proprietario { get; set; }
         public Condomino? Inquilino { get; set; }
@@ -22,17 +24,17 @@ namespace ProjCondominios.Models
 
         #region Construtor
 
-        public FracaoAutonoma(string identificacao, decimal area, decimal permilagem, decimal quota, Condominio condominio, Condomino proprietario, Condomino? inquilino = null)
+        public FracaoAutonoma(string identificacao, decimal area, decimal permilagem, decimal quota, TipoFracao tipoFracao, Condominio condominio, Condomino proprietario, Condomino? inquilino = null)
         {
             Identificacao = identificacao;
             Area = area;
             Permilagem = permilagem;
             Quota = quota;
+            TipoFracao = tipoFracao;
             Condominio = condominio;
             Proprietario = proprietario;
             Inquilino = inquilino;
         }
-
         #endregion
     }
 }

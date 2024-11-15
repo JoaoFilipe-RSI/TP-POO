@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using ProjCondominios.Models;
 using ProjCondominios.Enums;
+using ProjCondominios.Interfaces;
 
 namespace ProjCondominios.Services
 {
-    public class RelatorioService
+    public class RelatorioService : IRelatorioService
     {
 
         #region Propriedades Privadas
@@ -66,7 +67,7 @@ namespace ProjCondominios.Services
 
             foreach (var reserva in reservas)
             {
-                sb.AppendLine($"{reserva.Id} | {reserva.Condomino.Nome} | {reserva.Condominio.Nome} | {reserva.Tipo} | {reserva.Data}");
+                sb.AppendLine($"{reserva.Id} | {reserva.Condomino.Nome} | {reserva.Condominio.Nome} | {reserva.TipoReserva} | {reserva.Data}");
             }
 
             return sb.ToString();
@@ -101,6 +102,23 @@ namespace ProjCondominios.Services
 
             return sb.ToString();
         }
+
+        public string GerarAtaReuniao(Reuniao reuniao)
+        {
+            var relatorio = $"Ata da Reunião\n";
+            relatorio += "=============================\n";
+            relatorio += $"Data e Hora: {reuniao.DataHora}\n";
+            relatorio += $"Local: {reuniao.Local}\n";
+            relatorio += $"Pauta: {reuniao.Pauta}\n";
+            relatorio += "Participantes:\n";
+            foreach (var participante in reuniao.Participantes)
+            {
+                relatorio += $"- {participante.Nome}\n";
+            }
+            return relatorio;
+        }
+
+        // Exportação de relatórios em formatos como PDF ou Excel.
         #endregion
     }
 }

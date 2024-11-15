@@ -11,14 +11,13 @@ namespace ProjCondominios.Models
     {
         #region Propriedades Privadas
 
-        private TipoReserva tipo;
+        private TipoReserva tipoReserva;
         private string descricao;
         private DateTime data;
         private TimeSpan horaInicio;
         private TimeSpan horaFim;
         private Condominio condominio;
         private Condomino condomino;
-
         #endregion
 
         #region Propriedades Públicas
@@ -57,11 +56,10 @@ namespace ProjCondominios.Models
             }
         }
 
-
-        public TipoReserva Tipo
+        public TipoReserva TipoReserva
         {
-            get => tipo;
-            set => tipo = value;
+            get => tipoReserva;
+            set => tipoReserva = value;
         }
 
         public Condomino Condomino
@@ -75,18 +73,17 @@ namespace ProjCondominios.Models
             get => condominio;
             set => condominio = value ?? throw new ArgumentNullException(nameof(Condominio), "Condomínio não pode ser nulo.");
         }
-
         #endregion
 
         #region Construtores
-        public Reserva(string descricao, DateTime data, TimeSpan horaInicio, TimeSpan horaFim, TipoReserva tipo, Condominio condominio, Condomino condomino)
+        public Reserva(string descricao, DateTime data, TimeSpan horaInicio, TimeSpan horaFim, TipoReserva tipoReserva, Condominio condominio, Condomino condomino)
         {
             Id = Guid.NewGuid();
             Descricao = descricao;
             Data = data;
             HoraInicio = horaInicio;
             HoraFim = horaFim;
-            Tipo = tipo;
+            TipoReserva = tipoReserva;
         }
         #endregion
     }

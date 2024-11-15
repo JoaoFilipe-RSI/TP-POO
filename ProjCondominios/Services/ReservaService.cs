@@ -15,12 +15,12 @@ namespace ProjCondominios.Services
         private List<Reserva> _reservas = new List<Reserva>();
         #endregion
 
-        #region Métodos CRUD
+        #region Métodos
 
         public void RegistrarReserva(Reserva reserva)
         {
             if (_reservas.Any(r => r.Data == reserva.Data &&
-                                   r.Tipo == reserva.Tipo &&
+                                   r.TipoReserva == reserva.TipoReserva &&
                                    r.Condominio == reserva.Condominio &&
                                    ((reserva.HoraInicio >= r.HoraInicio && reserva.HoraInicio < r.HoraFim) ||
                                     (reserva.HoraFim > r.HoraInicio && reserva.HoraFim <= r.HoraFim))))
@@ -42,13 +42,10 @@ namespace ProjCondominios.Services
         {
             return _reservas;
         }
-        #endregion
-
-        #region Métodos Personalizados
 
         public List<Reserva> ListarReservasPorArea(TipoReserva tipo)
         {
-            return _reservas.Where(r => r.Tipo == tipo).ToList();
+            return _reservas.Where(r => r.TipoReserva == tipo).ToList();
         }
 
         public List<Reserva> ListarReservasPorData(DateTime data)
