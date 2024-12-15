@@ -41,6 +41,10 @@ namespace ProjCondominios.Services
         // Método para adicionar um condomínio
         public void AdicionarCondominio(Condominio condominio)
         {
+            if (condominio == null)
+            {
+                throw new ArgumentNullException(nameof(condominio), "O condomínio não pode ser nulo.");
+            }
             _condominios.Add(condominio);
         }
 

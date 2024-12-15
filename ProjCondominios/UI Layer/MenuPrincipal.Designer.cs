@@ -30,13 +30,8 @@
         {
             menuStrip1 = new MenuStrip();
             condominiosToolStripMenuItem = new ToolStripMenuItem();
-            adicionarNovoCondominioToolStripMenuItem1 = new ToolStripMenuItem();
-            removerUmCondominioToolStripMenuItem = new ToolStripMenuItem();
-            editarImformaçãoDeUmCondominioToolStripMenuItem = new ToolStripMenuItem();
-            listarTodosOsMoradoresToolStripMenuItem = new ToolStripMenuItem();
+            GestaoCondominiosToolStripMenuItem = new ToolStripMenuItem();
             reuniõesToolStripMenuItem = new ToolStripMenuItem();
-            agendarReuniõesToolStripMenuItem = new ToolStripMenuItem();
-            atasDasReuniõesToolStripMenuItem = new ToolStripMenuItem();
             adicionarNovoCondominioToolStripMenuItem = new ToolStripMenuItem();
             adicionarNovoMoradorToolStripMenuItem = new ToolStripMenuItem();
             removerMoradorToolStripMenuItem = new ToolStripMenuItem();
@@ -44,10 +39,6 @@
             listarUnidadesToolStripMenuItem = new ToolStripMenuItem();
             reservasToolStripMenuItem = new ToolStripMenuItem();
             efetuarNovaReservaToolStripMenuItem = new ToolStripMenuItem();
-            cancelarReserToolStripMenuItem = new ToolStripMenuItem();
-            listarReservasToolStripMenuItem = new ToolStripMenuItem();
-            deCadaCondomínioToolStripMenuItem1 = new ToolStripMenuItem();
-            deCadaToolStripMenuItem = new ToolStripMenuItem();
             pagamentosToolStripMenuItem = new ToolStripMenuItem();
             registarNovoPagamentoToolStripMenuItem = new ToolStripMenuItem();
             registarNovoPagamentoToolStripMenuItem1 = new ToolStripMenuItem();
@@ -61,11 +52,11 @@
             listarDespesasToolStripMenuItem = new ToolStripMenuItem();
             deCadaCondomínioToolStripMenuItem = new ToolStripMenuItem();
             todasToolStripMenuItem = new ToolStripMenuItem();
-            emitirFaturaToolStripMenuItem = new ToolStripMenuItem();
             relatórioFinanceiroToolStripMenuItem = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
             fecharToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
+            gestãoDeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -76,79 +67,47 @@
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            menuStrip1.Text = "MenuPrincipal";
             // 
             // condominiosToolStripMenuItem
             // 
-            condominiosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { adicionarNovoCondominioToolStripMenuItem1, removerUmCondominioToolStripMenuItem, editarImformaçãoDeUmCondominioToolStripMenuItem, listarTodosOsMoradoresToolStripMenuItem, reuniõesToolStripMenuItem });
+            condominiosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { GestaoCondominiosToolStripMenuItem, gestãoDeToolStripMenuItem, reuniõesToolStripMenuItem });
             condominiosToolStripMenuItem.Name = "condominiosToolStripMenuItem";
             condominiosToolStripMenuItem.Size = new Size(91, 20);
-            condominiosToolStripMenuItem.Text = "Condominios";
+            condominiosToolStripMenuItem.Text = "Condomínios";
             // 
-            // adicionarNovoCondominioToolStripMenuItem1
+            // GestaoCondominiosToolStripMenuItem
             // 
-            adicionarNovoCondominioToolStripMenuItem1.Name = "adicionarNovoCondominioToolStripMenuItem1";
-            adicionarNovoCondominioToolStripMenuItem1.Size = new Size(273, 22);
-            adicionarNovoCondominioToolStripMenuItem1.Text = "Adicionar novo condominio";
-            adicionarNovoCondominioToolStripMenuItem1.Click += adicionarNovoCondominioToolStripMenuItem1_Click;
-            // 
-            // removerUmCondominioToolStripMenuItem
-            // 
-            removerUmCondominioToolStripMenuItem.Name = "removerUmCondominioToolStripMenuItem";
-            removerUmCondominioToolStripMenuItem.Size = new Size(273, 22);
-            removerUmCondominioToolStripMenuItem.Text = "Remover um condominio";
-            // 
-            // editarImformaçãoDeUmCondominioToolStripMenuItem
-            // 
-            editarImformaçãoDeUmCondominioToolStripMenuItem.Name = "editarImformaçãoDeUmCondominioToolStripMenuItem";
-            editarImformaçãoDeUmCondominioToolStripMenuItem.Size = new Size(273, 22);
-            editarImformaçãoDeUmCondominioToolStripMenuItem.Text = "Editar informação de um condominio";
-            // 
-            // listarTodosOsMoradoresToolStripMenuItem
-            // 
-            listarTodosOsMoradoresToolStripMenuItem.Name = "listarTodosOsMoradoresToolStripMenuItem";
-            listarTodosOsMoradoresToolStripMenuItem.Size = new Size(273, 22);
-            listarTodosOsMoradoresToolStripMenuItem.Text = "Listar Condominios existentes";
-            listarTodosOsMoradoresToolStripMenuItem.Click += listarTodosOsMoradoresToolStripMenuItem_Click;
+            GestaoCondominiosToolStripMenuItem.Name = "GestaoCondominiosToolStripMenuItem";
+            GestaoCondominiosToolStripMenuItem.Size = new Size(234, 22);
+            GestaoCondominiosToolStripMenuItem.Text = "Gestão dos Condomínios";
+            GestaoCondominiosToolStripMenuItem.Click += GestaoCondominiosToolStripMenuItem_Click;
             // 
             // reuniõesToolStripMenuItem
             // 
-            reuniõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agendarReuniõesToolStripMenuItem, atasDasReuniõesToolStripMenuItem });
             reuniõesToolStripMenuItem.Name = "reuniõesToolStripMenuItem";
-            reuniõesToolStripMenuItem.Size = new Size(273, 22);
-            reuniõesToolStripMenuItem.Text = "Reuniões";
-            // 
-            // agendarReuniõesToolStripMenuItem
-            // 
-            agendarReuniõesToolStripMenuItem.Name = "agendarReuniõesToolStripMenuItem";
-            agendarReuniõesToolStripMenuItem.Size = new Size(191, 22);
-            agendarReuniõesToolStripMenuItem.Text = "Agendar nova reunião";
-            // 
-            // atasDasReuniõesToolStripMenuItem
-            // 
-            atasDasReuniõesToolStripMenuItem.Name = "atasDasReuniõesToolStripMenuItem";
-            atasDasReuniõesToolStripMenuItem.Size = new Size(221, 22);
-            atasDasReuniõesToolStripMenuItem.Text = "Atas das reuniões anteriores";
+            reuniõesToolStripMenuItem.Size = new Size(205, 22);
+            reuniõesToolStripMenuItem.Text = "Gestão de Reuniões";
             // 
             // adicionarNovoCondominioToolStripMenuItem
             // 
             adicionarNovoCondominioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { adicionarNovoMoradorToolStripMenuItem, removerMoradorToolStripMenuItem, editarInformaçõesDeOcupanteToolStripMenuItem, listarUnidadesToolStripMenuItem });
             adicionarNovoCondominioToolStripMenuItem.Name = "adicionarNovoCondominioToolStripMenuItem";
-            adicionarNovoCondominioToolStripMenuItem.Size = new Size(68, 20);
-            adicionarNovoCondominioToolStripMenuItem.Text = "Unidades";
+            adicionarNovoCondominioToolStripMenuItem.Size = new Size(88, 20);
+            adicionarNovoCondominioToolStripMenuItem.Text = "Condóminos";
             adicionarNovoCondominioToolStripMenuItem.Click += adicionarNovoCondominioToolStripMenuItem_Click;
             // 
             // adicionarNovoMoradorToolStripMenuItem
             // 
             adicionarNovoMoradorToolStripMenuItem.Name = "adicionarNovoMoradorToolStripMenuItem";
-            adicionarNovoMoradorToolStripMenuItem.Size = new Size(242, 22);
+            adicionarNovoMoradorToolStripMenuItem.Size = new Size(261, 22);
             adicionarNovoMoradorToolStripMenuItem.Text = "Adicionar nova unidade ";
             adicionarNovoMoradorToolStripMenuItem.Click += adicionarNovoMoradorToolStripMenuItem_Click;
             // 
             // removerMoradorToolStripMenuItem
             // 
             removerMoradorToolStripMenuItem.Name = "removerMoradorToolStripMenuItem";
-            removerMoradorToolStripMenuItem.Size = new Size(242, 22);
+            removerMoradorToolStripMenuItem.Size = new Size(261, 22);
             removerMoradorToolStripMenuItem.Text = "Remover Unidade";
             // 
             // editarInformaçõesDeOcupanteToolStripMenuItem
@@ -160,12 +119,12 @@
             // listarUnidadesToolStripMenuItem
             // 
             listarUnidadesToolStripMenuItem.Name = "listarUnidadesToolStripMenuItem";
-            listarUnidadesToolStripMenuItem.Size = new Size(242, 22);
+            listarUnidadesToolStripMenuItem.Size = new Size(261, 22);
             listarUnidadesToolStripMenuItem.Text = "Listar Unidades";
             // 
             // reservasToolStripMenuItem
             // 
-            reservasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { efetuarNovaReservaToolStripMenuItem, cancelarReserToolStripMenuItem, listarReservasToolStripMenuItem });
+            reservasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { efetuarNovaReservaToolStripMenuItem });
             reservasToolStripMenuItem.Name = "reservasToolStripMenuItem";
             reservasToolStripMenuItem.Size = new Size(64, 20);
             reservasToolStripMenuItem.Text = "Reservas";
@@ -174,36 +133,11 @@
             // 
             efetuarNovaReservaToolStripMenuItem.Name = "efetuarNovaReservaToolStripMenuItem";
             efetuarNovaReservaToolStripMenuItem.Size = new Size(180, 22);
-            efetuarNovaReservaToolStripMenuItem.Text = "Efetuar nova reserva";
-            // 
-            // cancelarReserToolStripMenuItem
-            // 
-            cancelarReserToolStripMenuItem.Name = "cancelarReserToolStripMenuItem";
-            cancelarReserToolStripMenuItem.Size = new Size(180, 22);
-            cancelarReserToolStripMenuItem.Text = "Cancelar reserva";
-            // 
-            // listarReservasToolStripMenuItem
-            // 
-            listarReservasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { deCadaCondomínioToolStripMenuItem1, deCadaToolStripMenuItem });
-            listarReservasToolStripMenuItem.Name = "listarReservasToolStripMenuItem";
-            listarReservasToolStripMenuItem.Size = new Size(180, 22);
-            listarReservasToolStripMenuItem.Text = "Listar Reservas";
-            // 
-            // deCadaCondomínioToolStripMenuItem1
-            // 
-            deCadaCondomínioToolStripMenuItem1.Name = "deCadaCondomínioToolStripMenuItem1";
-            deCadaCondomínioToolStripMenuItem1.Size = new Size(179, 22);
-            deCadaCondomínioToolStripMenuItem1.Text = "De um Condomínio";
-            // 
-            // deCadaToolStripMenuItem
-            // 
-            deCadaToolStripMenuItem.Name = "deCadaToolStripMenuItem";
-            deCadaToolStripMenuItem.Size = new Size(179, 22);
-            deCadaToolStripMenuItem.Text = "De uma Unidade";
+            efetuarNovaReservaToolStripMenuItem.Text = "Gestão de Reservas";
             // 
             // pagamentosToolStripMenuItem
             // 
-            pagamentosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registarNovoPagamentoToolStripMenuItem, registarNovaDespesaToolStripMenuItem, emitirFaturaToolStripMenuItem, relatórioFinanceiroToolStripMenuItem });
+            pagamentosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registarNovoPagamentoToolStripMenuItem, registarNovaDespesaToolStripMenuItem, relatórioFinanceiroToolStripMenuItem });
             pagamentosToolStripMenuItem.Name = "pagamentosToolStripMenuItem";
             pagamentosToolStripMenuItem.Size = new Size(93, 20);
             pagamentosToolStripMenuItem.Text = "Contabilidade";
@@ -213,8 +147,8 @@
             // 
             registarNovoPagamentoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registarNovoPagamentoToolStripMenuItem1, listarPagamentosToolStripMenuItem, emitirFaturaToolStripMenuItem1 });
             registarNovoPagamentoToolStripMenuItem.Name = "registarNovoPagamentoToolStripMenuItem";
-            registarNovoPagamentoToolStripMenuItem.Size = new Size(219, 22);
-            registarNovoPagamentoToolStripMenuItem.Text = "Pagamento de Quotas";
+            registarNovoPagamentoToolStripMenuItem.Size = new Size(195, 22);
+            registarNovoPagamentoToolStripMenuItem.Text = "Gestão de Pagamentos";
             // 
             // registarNovoPagamentoToolStripMenuItem1
             // 
@@ -258,8 +192,8 @@
             // 
             registarNovaDespesaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { lançarNovaDespesaToolStripMenuItem, listarDespesasToolStripMenuItem });
             registarNovaDespesaToolStripMenuItem.Name = "registarNovaDespesaToolStripMenuItem";
-            registarNovaDespesaToolStripMenuItem.Size = new Size(219, 22);
-            registarNovaDespesaToolStripMenuItem.Text = "Despesas dos Condomínios";
+            registarNovaDespesaToolStripMenuItem.Size = new Size(195, 22);
+            registarNovaDespesaToolStripMenuItem.Text = "Gestão de Despesas";
             // 
             // lançarNovaDespesaToolStripMenuItem
             // 
@@ -286,18 +220,11 @@
             todasToolStripMenuItem.Size = new Size(186, 22);
             todasToolStripMenuItem.Text = "Todas";
             // 
-            // emitirFaturaToolStripMenuItem
-            // 
-            emitirFaturaToolStripMenuItem.Name = "emitirFaturaToolStripMenuItem";
-            emitirFaturaToolStripMenuItem.Size = new Size(219, 22);
-            emitirFaturaToolStripMenuItem.Text = "Emitir fatura";
-            emitirFaturaToolStripMenuItem.Click += emitirFaturaToolStripMenuItem_Click;
-            // 
             // relatórioFinanceiroToolStripMenuItem
             // 
             relatórioFinanceiroToolStripMenuItem.Name = "relatórioFinanceiroToolStripMenuItem";
-            relatórioFinanceiroToolStripMenuItem.Size = new Size(219, 22);
-            relatórioFinanceiroToolStripMenuItem.Text = "Relatório Financeiro";
+            relatórioFinanceiroToolStripMenuItem.Size = new Size(195, 22);
+            relatórioFinanceiroToolStripMenuItem.Text = "Relatórios Financeiros";
             // 
             // sairToolStripMenuItem
             // 
@@ -317,8 +244,14 @@
             // 
             panel1.Location = new Point(12, 37);
             panel1.Name = "panel1";
-            panel1.Size = new Size(521, 175);
+            panel1.Size = new Size(150, 247);
             panel1.TabIndex = 1;
+            // 
+            // gestãoDeToolStripMenuItem
+            // 
+            gestãoDeToolStripMenuItem.Name = "gestãoDeToolStripMenuItem";
+            gestãoDeToolStripMenuItem.Size = new Size(234, 22);
+            gestãoDeToolStripMenuItem.Text = "Gestão de Frações Autónomas";
             // 
             // MenuPrincipal
             // 
@@ -329,8 +262,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "MenuPrincipal";
-            Text = "Form1";
-            Load += Form1_Load;
+            Text = "Menu Principal";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -341,22 +273,16 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem condominiosToolStripMenuItem;
-        private ToolStripMenuItem adicionarNovoCondominioToolStripMenuItem1;
         private ToolStripMenuItem adicionarNovoCondominioToolStripMenuItem;
-        private ToolStripMenuItem editarImformaçãoDeUmCondominioToolStripMenuItem;
-        private ToolStripMenuItem listarTodosOsMoradoresToolStripMenuItem;
+        private ToolStripMenuItem GestaoCondominiosToolStripMenuItem;
         private ToolStripMenuItem reservasToolStripMenuItem;
         private ToolStripMenuItem pagamentosToolStripMenuItem;
-        private ToolStripMenuItem removerUmCondominioToolStripMenuItem;
         private ToolStripMenuItem adicionarNovoMoradorToolStripMenuItem;
         private ToolStripMenuItem removerMoradorToolStripMenuItem;
         private ToolStripMenuItem registarNovoPagamentoToolStripMenuItem;
-        private ToolStripMenuItem emitirFaturaToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
         private ToolStripMenuItem fecharToolStripMenuItem;
         private ToolStripMenuItem efetuarNovaReservaToolStripMenuItem;
-        private ToolStripMenuItem cancelarReserToolStripMenuItem;
-        private ToolStripMenuItem listarReservasToolStripMenuItem;
         private Panel panel1;
         private ToolStripMenuItem registarNovaDespesaToolStripMenuItem;
         private ToolStripMenuItem registarNovoPagamentoToolStripMenuItem1;
@@ -373,9 +299,6 @@
         private ToolStripMenuItem editarInformaçõesDeOcupanteToolStripMenuItem;
         private ToolStripMenuItem listarUnidadesToolStripMenuItem;
         private ToolStripMenuItem reuniõesToolStripMenuItem;
-        private ToolStripMenuItem agendarReuniõesToolStripMenuItem;
-        private ToolStripMenuItem atasDasReuniõesToolStripMenuItem;
-        private ToolStripMenuItem deCadaCondomínioToolStripMenuItem1;
-        private ToolStripMenuItem deCadaToolStripMenuItem;
+        private ToolStripMenuItem gestãoDeToolStripMenuItem;
     }
 }

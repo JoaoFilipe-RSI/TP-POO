@@ -1,98 +1,153 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\CLONE\\TP-POO\\ProjCondominios\\",
+  "WorkspaceRootPath": "C:\\ProjetoCondominios\\ProjCondominios\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\ui layer\\gestaocondominios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\gestaocondominios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\models\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\ui layer\\gestaocondominos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\gestaocondominos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|C:\\ProjetoCondominios\\ProjCondominios\\ui layer\\gestaocondominios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\gestaocondominios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\models\\reuniao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\reuniao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|C:\\ProjetoCondominios\\ProjCondominios\\ui layer\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\calculadorafinanceira\\calculosfinanceirosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:calculadorafinanceira\\calculosfinanceirosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\ui layer\\menuprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\menuprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\enums\\tipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|C:\\ProjetoCondominios\\ProjCondominios\\ui layer\\formlistarcondominios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\formlistarcondominios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\ui layer\\formlistarcondominios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\formlistarcondominios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\ui layer\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\ui layer\\gestaocondominios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\gestaocondominios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\ui layer\\formregistocondominio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\formregistocondominio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|C:\\ProjetoCondominios\\ProjCondominios\\ui layer\\formregistocondominio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\formregistocondominio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\ui layer\\formregistocondominio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\formregistocondominio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\ui layer\\formlistarcondominios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:ui layer\\formlistarcondominios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\enums\\tipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:enums\\tipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\interfaces\\irelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:interfaces\\irelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\models\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\services\\relatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\relatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\services\\reuniaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\reuniaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\services\\pagamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\pagamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\services\\fracaoautonomaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\fracaoautonomaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\services\\financeiroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\financeiroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\services\\despesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\despesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\services\\condominioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\condominioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\models\\condomino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\models\\condomino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\condomino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\models\\condominio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\condominio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\models\\inquilino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\inquilino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\models\\fracaoautonoma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\models\\fracaoautonoma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\fracaoautonoma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProjetoCondominios\\ProjCondominios\\obj\\Debug\\net8.0-windows\\ProjCondominios.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0-windows\\ProjCondominios.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\interfaces\\irelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:interfaces\\irelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\services\\reuniaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\reuniaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\models\\reuniao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\reuniao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\services\\despesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\despesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\services\\pagamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\pagamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\models\\inquilino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\inquilino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\models\\proprietario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:models\\proprietario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\services\\fracaoautonomaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\fracaoautonomaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\services\\relatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:services\\relatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\clone\\tp-poo\\projcondominios\\projcondominios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|c:\\projetocondominios\\projcondominios\\projcondominios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{99805408-E7FC-43FE-AE1F-187EB5A00BFC}|ProjCondominios.csproj|solutionrelative:projcondominios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\CLONE\\TP-POO\\ProjCondominios\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\CLONE\\TP-POO\\ProjCondominios\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProjetoCondominios\\ProjCondominios\\Forms\\MenuPrincipal.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Forms\\MenuPrincipal.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProjetoCondominios\\ProjCondominios\\Forms\\FormRegistoCondominio.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Forms\\FormRegistoCondominio.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProjetoCondominios\\ProjCondominios\\forms\\formregistocondominio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:forms\\formregistocondominio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,27 +157,292 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GestaoCondominos.cs [Projeto]",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\GestaoCondominos.cs",
+              "RelativeDocumentMoniker": "UI Layer\\GestaoCondominos.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\GestaoCondominos.cs [Projeto]",
+              "RelativeToolTip": "UI Layer\\GestaoCondominos.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T14:24:53.538Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GestaoCondominios.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\GestaoCondominios.cs",
+              "RelativeDocumentMoniker": "UI Layer\\GestaoCondominios.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\GestaoCondominios.cs",
+              "RelativeToolTip": "UI Layer\\GestaoCondominios.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowE0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T20:24:18.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GestaoCondominios.cs [Projeto]",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\GestaoCondominios.cs",
+              "RelativeDocumentMoniker": "UI Layer\\GestaoCondominios.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\GestaoCondominios.cs [Projeto]",
+              "RelativeToolTip": "UI Layer\\GestaoCondominios.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T22:06:13.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MenuPrincipal.cs [Projeto]",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\MenuPrincipal.cs",
+              "RelativeDocumentMoniker": "UI Layer\\MenuPrincipal.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\MenuPrincipal.cs [Projeto]",
+              "RelativeToolTip": "UI Layer\\MenuPrincipal.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:14:02.789Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "FormListarCondominios.cs [Projeto]",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormListarCondominios.cs",
+              "RelativeDocumentMoniker": "UI Layer\\FormListarCondominios.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormListarCondominios.cs [Projeto]",
+              "RelativeToolTip": "UI Layer\\FormListarCondominios.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:42:36.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuPrincipal.Designer.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\MenuPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "UI Layer\\MenuPrincipal.Designer.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\MenuPrincipal.Designer.cs",
+              "RelativeToolTip": "UI Layer\\MenuPrincipal.Designer.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAowBEBAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:11:28.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormListarCondominios.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormListarCondominios.cs",
+              "RelativeDocumentMoniker": "UI Layer\\FormListarCondominios.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormListarCondominios.cs",
+              "RelativeToolTip": "UI Layer\\FormListarCondominios.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowC4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:58:55.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MenuPrincipal.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\MenuPrincipal.cs",
+              "RelativeDocumentMoniker": "UI Layer\\MenuPrincipal.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\MenuPrincipal.cs",
+              "RelativeToolTip": "UI Layer\\MenuPrincipal.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwCEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:07:55.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GestaoCondominios.Designer.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\GestaoCondominios.Designer.cs",
+              "RelativeDocumentMoniker": "UI Layer\\GestaoCondominios.Designer.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\GestaoCondominios.Designer.cs",
+              "RelativeToolTip": "UI Layer\\GestaoCondominios.Designer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwIMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T20:25:07.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormRegistoCondominio.Designer.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormRegistoCondominio.Designer.cs",
+              "RelativeDocumentMoniker": "UI Layer\\FormRegistoCondominio.Designer.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormRegistoCondominio.Designer.cs",
+              "RelativeToolTip": "UI Layer\\FormRegistoCondominio.Designer.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAowBwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:45:03.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormRegistoCondominio.cs [Projeto]",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormRegistoCondominio.cs",
+              "RelativeDocumentMoniker": "UI Layer\\FormRegistoCondominio.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormRegistoCondominio.cs [Projeto]",
+              "RelativeToolTip": "UI Layer\\FormRegistoCondominio.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:46:15.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormRegistoCondominio.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormRegistoCondominio.cs",
+              "RelativeDocumentMoniker": "UI Layer\\FormRegistoCondominio.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormRegistoCondominio.cs",
+              "RelativeToolTip": "UI Layer\\FormRegistoCondominio.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:48:09.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormListarCondominios.Designer.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormListarCondominios.Designer.cs",
+              "RelativeDocumentMoniker": "UI Layer\\FormListarCondominios.Designer.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\UI Layer\\FormListarCondominios.Designer.cs",
+              "RelativeToolTip": "UI Layer\\FormListarCondominios.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCEAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:39:56.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Tipos.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Enums\\Tipos.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Enums\\Tipos.cs",
               "RelativeDocumentMoniker": "Enums\\Tipos.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Enums\\Tipos.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Enums\\Tipos.cs",
               "RelativeToolTip": "Enums\\Tipos.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T16:00:07.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
+              "Title": "Pagamento.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Pagamento.cs",
+              "RelativeDocumentMoniker": "Models\\Pagamento.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Pagamento.cs",
+              "RelativeToolTip": "Models\\Pagamento.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:46:55.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Condomino.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Condomino.cs",
+              "RelativeDocumentMoniker": "Models\\Condomino.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Condomino.cs",
+              "RelativeToolTip": "Models\\Condomino.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T15:43:09.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FracaoAutonoma.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\FracaoAutonoma.cs",
+              "RelativeDocumentMoniker": "Models\\FracaoAutonoma.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\FracaoAutonoma.cs",
+              "RelativeToolTip": "Models\\FracaoAutonoma.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:35:05.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProjCondominios.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\obj\\Debug\\net8.0-windows\\ProjCondominios.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0-windows\\ProjCondominios.AssemblyInfo.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\obj\\Debug\\net8.0-windows\\ProjCondominios.AssemblyInfo.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0-windows\\ProjCondominios.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T10:03:23.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MenuPrincipal.Designer.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Forms\\MenuPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\MenuPrincipal.Designer.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Forms\\MenuPrincipal.Designer.cs",
+              "RelativeToolTip": "Forms\\MenuPrincipal.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T16:14:09.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Reserva.cs",
+              "RelativeDocumentMoniker": "Models\\Reserva.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Reserva.cs",
+              "RelativeToolTip": "Models\\Reserva.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAuwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:50:24.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ReservaService.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\ReservaService.cs",
+              "RelativeDocumentMoniker": "Services\\ReservaService.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\ReservaService.cs",
+              "RelativeToolTip": "Services\\ReservaService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T15:04:25.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Reuniao.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Reuniao.cs",
+              "RelativeDocumentMoniker": "Models\\Reuniao.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Reuniao.cs",
+              "RelativeToolTip": "Models\\Reuniao.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:47:55.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ReuniaoService.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\ReuniaoService.cs",
+              "RelativeDocumentMoniker": "Services\\ReuniaoService.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\ReuniaoService.cs",
+              "RelativeToolTip": "Services\\ReuniaoService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:59:21.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "IRelatorioService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Interfaces\\IRelatorioService.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Interfaces\\IRelatorioService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IRelatorioService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Interfaces\\IRelatorioService.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Interfaces\\IRelatorioService.cs",
               "RelativeToolTip": "Interfaces\\IRelatorioService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -130,72 +450,118 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CalculosFinanceirosService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\CalculadoraFinanceira\\CalculosFinanceirosService.cs",
-              "RelativeDocumentMoniker": "CalculadoraFinanceira\\CalculosFinanceirosService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\CalculadoraFinanceira\\CalculosFinanceirosService.cs",
-              "RelativeToolTip": "CalculadoraFinanceira\\CalculosFinanceirosService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 35,
+              "Title": "FormRegistoCondominio.Designer.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Forms\\FormRegistoCondominio.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\FormRegistoCondominio.Designer.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Forms\\FormRegistoCondominio.Designer.cs",
+              "RelativeToolTip": "Forms\\FormRegistoCondominio.Designer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA3wCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T12:55:02.748Z"
+              "WhenOpened": "2024-12-03T15:13:10.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Reuniao.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Reuniao.cs",
-              "RelativeDocumentMoniker": "Models\\Reuniao.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Reuniao.cs",
-              "RelativeToolTip": "Models\\Reuniao.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "DespesaService.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\DespesaService.cs",
+              "RelativeDocumentMoniker": "Services\\DespesaService.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\DespesaService.cs",
+              "RelativeToolTip": "Services\\DespesaService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T09:47:55.172Z"
+              "WhenOpened": "2024-11-07T14:48:48.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 25,
               "Title": "Despesa.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Despesa.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Despesa.cs",
               "RelativeDocumentMoniker": "Models\\Despesa.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Despesa.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Despesa.cs",
               "RelativeToolTip": "Models\\Despesa.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwEcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T00:58:23.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pagamento.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Pagamento.cs",
-              "RelativeDocumentMoniker": "Models\\Pagamento.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Pagamento.cs",
-              "RelativeToolTip": "Models\\Pagamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T14:46:55.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Program.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Program.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T10:31:45.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T10:31:45.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 26,
+              "Title": "PagamentoService.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\PagamentoService.cs",
+              "RelativeDocumentMoniker": "Services\\PagamentoService.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\PagamentoService.cs",
+              "RelativeToolTip": "Services\\PagamentoService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T14:48:59.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Inquilino.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Inquilino.cs",
+              "RelativeDocumentMoniker": "Models\\Inquilino.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Inquilino.cs",
+              "RelativeToolTip": "Models\\Inquilino.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T15:48:24.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Proprietario.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Proprietario.cs",
+              "RelativeDocumentMoniker": "Models\\Proprietario.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Models\\Proprietario.cs",
+              "RelativeToolTip": "Models\\Proprietario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T15:45:02.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FracaoAutonomaService.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\FracaoAutonomaService.cs",
+              "RelativeDocumentMoniker": "Services\\FracaoAutonomaService.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\FracaoAutonomaService.cs",
+              "RelativeToolTip": "Services\\FracaoAutonomaService.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAwIAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T10:32:07.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "FormRegistoCondominio.cs [Projeto]",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Forms\\FormRegistoCondominio.cs",
+              "RelativeDocumentMoniker": "Forms\\FormRegistoCondominio.cs",
+              "ToolTip": "C:\\CLONE\\ProjCondominios\\Forms\\FormRegistoCondominio.cs [Projeto]",
+              "RelativeToolTip": "..\\..\\CLONE\\ProjCondominios\\Forms\\FormRegistoCondominio.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T15:08:11.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "RelatorioService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\RelatorioService.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\RelatorioService.cs",
               "RelativeDocumentMoniker": "Services\\RelatorioService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\RelatorioService.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Services\\RelatorioService.cs",
               "RelativeToolTip": "Services\\RelatorioService.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAhwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -203,166 +569,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReuniaoService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\ReuniaoService.cs",
-              "RelativeDocumentMoniker": "Services\\ReuniaoService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\ReuniaoService.cs",
-              "RelativeToolTip": "Services\\ReuniaoService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T09:59:21.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReservaService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\ReservaService.cs",
-              "RelativeDocumentMoniker": "Services\\ReservaService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\ReservaService.cs",
-              "RelativeToolTip": "Services\\ReservaService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwDcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T15:04:25.034Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PagamentoService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\PagamentoService.cs",
-              "RelativeDocumentMoniker": "Services\\PagamentoService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\PagamentoService.cs",
-              "RelativeToolTip": "Services\\PagamentoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T14:48:59.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FracaoAutonomaService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\FracaoAutonomaService.cs",
-              "RelativeDocumentMoniker": "Services\\FracaoAutonomaService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\FracaoAutonomaService.cs",
-              "RelativeToolTip": "Services\\FracaoAutonomaService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAmwHoAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T10:32:07.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FinanceiroService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\FinanceiroService.cs",
-              "RelativeDocumentMoniker": "Services\\FinanceiroService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\FinanceiroService.cs",
-              "RelativeToolTip": "Services\\FinanceiroService.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAIwE0AAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T10:50:55.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DespesaService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\DespesaService.cs",
-              "RelativeDocumentMoniker": "Services\\DespesaService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\DespesaService.cs",
-              "RelativeToolTip": "Services\\DespesaService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAADgvwoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T14:48:48.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CondominioService.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\CondominioService.cs",
-              "RelativeDocumentMoniker": "Services\\CondominioService.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Services\\CondominioService.cs",
-              "RelativeToolTip": "Services\\CondominioService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T10:48:46.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Reserva.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Reserva.cs",
-              "RelativeDocumentMoniker": "Models\\Reserva.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Reserva.cs",
-              "RelativeToolTip": "Models\\Reserva.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T14:50:24.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Condomino.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Condomino.cs",
-              "RelativeDocumentMoniker": "Models\\Condomino.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Condomino.cs",
-              "RelativeToolTip": "Models\\Condomino.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T15:43:09.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Condominio.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Condominio.cs",
-              "RelativeDocumentMoniker": "Models\\Condominio.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Condominio.cs",
-              "RelativeToolTip": "Models\\Condominio.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T09:36:42.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Inquilino.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Inquilino.cs",
-              "RelativeDocumentMoniker": "Models\\Inquilino.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\Inquilino.cs",
-              "RelativeToolTip": "Models\\Inquilino.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T15:48:24.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FracaoAutonoma.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\FracaoAutonoma.cs",
-              "RelativeDocumentMoniker": "Models\\FracaoAutonoma.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Models\\FracaoAutonoma.cs",
-              "RelativeToolTip": "Models\\FracaoAutonoma.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:35:05.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 33,
               "Title": "MenuPrincipal.cs [Projeto]",
               "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\MenuPrincipal.cs",
-              "RelativeDocumentMoniker": "MenuPrincipal.cs",
+              "RelativeDocumentMoniker": "..\\..\\CLONE\\TP-POO\\ProjCondominios\\MenuPrincipal.cs",
               "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\MenuPrincipal.cs [Projeto]",
-              "RelativeToolTip": "..\\..\\..\\ProjetoCondominios\\ProjCondominios\\MenuPrincipal.cs [Projeto]",
+              "RelativeToolTip": "MenuPrincipal.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T20:15:08.535Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "Resources.Designer.cs",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\Properties\\Resources.Designer.cs",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\Properties\\Resources.Designer.cs",
               "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\Properties\\Resources.Designer.cs",
               "RelativeToolTip": "Properties\\Resources.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -370,11 +592,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "ProjCondominios.csproj",
-              "DocumentMoniker": "C:\\CLONE\\TP-POO\\ProjCondominios\\ProjCondominios.csproj",
+              "DocumentMoniker": "C:\\ProjetoCondominios\\ProjCondominios\\ProjCondominios.csproj",
               "RelativeDocumentMoniker": "ProjCondominios.csproj",
-              "ToolTip": "C:\\CLONE\\TP-POO\\ProjCondominios\\ProjCondominios.csproj",
+              "ToolTip": "C:\\ProjetoCondominios\\ProjCondominios\\ProjCondominios.csproj",
               "RelativeToolTip": "ProjCondominios.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

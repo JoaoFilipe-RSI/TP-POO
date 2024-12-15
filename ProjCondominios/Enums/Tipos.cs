@@ -18,7 +18,8 @@ namespace ProjCondominios.Enums
         Residencia,
         Garagem,
         Loja,
-        Pavilhão
+        Pavilhão,
+        Vazia
     }
 
     public enum TipoDespesa
