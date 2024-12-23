@@ -3,6 +3,7 @@ using ProjCondominios.Services;
 using ProjCondominios.Models;
 using ProjCondominios.Interfaces;
 using System.Collections.Generic;
+using CalculadoraFinanceira;
 
 namespace ProjCondominios
 {
@@ -18,6 +19,8 @@ namespace ProjCondominios
         private readonly RelatorioService _relatorioService;
         private readonly DespesaService _despesaService;
         private readonly PagamentoService _pagamentoService;
+        private readonly FinanceiroService _financeiroService;
+        private readonly CalculosFinanceirosService _calculosFinanceirosService;
 
         // Construtor único que inicializa todos os serviços necessários
         public MenuPrincipal()
@@ -28,12 +31,13 @@ namespace ProjCondominios
             _fileService = new FileService();
             _condominioService = new CondominioService();
             _condominoService = new CondominoService();
-            //_relatorioService = new RelatorioService(); 
             _reuniaoService = new ReuniaoService(_relatorioService);
             _fracaoService = new FracaoAutonomaService(_condominioService, _condominoService, _fileService, new List<FracaoAutonoma>());
             _reservaService = new ReservaService();
             _despesaService = new DespesaService();
             _pagamentoService = new PagamentoService();
+            _calculosFinanceirosService = new CalculosFinanceirosService();
+            _financeiroService = new FinanceiroService(_pagamentoService, _despesaService, _calculosFinanceirosService);
             _condominios = _condominioService.ObterCondominios();
         }
 
@@ -100,13 +104,9 @@ namespace ProjCondominios
 
         private void GestaoFinanceiraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var formGestaoFinanceira = new GestaoFinanceira(_financeiroService, _condominios, this);
+            formGestaoFinanceira.Show();
         }
-        private void RelatoriosFinanceirosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
+                
     }
 }

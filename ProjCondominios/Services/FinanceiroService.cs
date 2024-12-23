@@ -11,6 +11,7 @@ using CalculadoraFinanceira; // Referência à DLL
 
 namespace ProjCondominios.Services
 {
+    
     public class FinanceiroService
     {
         #region Propriedades Privadas

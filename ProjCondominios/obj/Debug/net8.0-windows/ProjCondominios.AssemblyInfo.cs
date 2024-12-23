@@ -14,12 +14,12 @@ using System.Reflection;
 //[assembly: System.Reflection.AssemblyCompanyAttribute("ProjCondominios")]
 //[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 //[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-//[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1aaca299ef0e73bf5250409e162b4efe35fd0f9e")]
+//[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1552ac86489a81f30ff1e180b5b8d9f42d112fb")]
 //[assembly: System.Reflection.AssemblyProductAttribute("ProjCondominios")]
 //[assembly: System.Reflection.AssemblyTitleAttribute("ProjCondominios")]
 //[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 //[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
-//[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

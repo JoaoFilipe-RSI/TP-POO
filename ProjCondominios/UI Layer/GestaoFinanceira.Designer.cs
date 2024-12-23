@@ -1,31 +1,22 @@
-﻿namespace ProjCondominios.UI_Layer
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Forms;
+using System.Xml.Linq;
+
+namespace ProjCondominios.UI_Layer
 {
     partial class GestaoFinanceira
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private Panel pnlMenu;
+        private Button BtnFechar;
+        private Label lblTitulo;
+        private Button btnCalcularSaldo;
+        private Button btnRelatorioFinanceiro;
+        private Button btnCalcularBalanco;
+        private Panel pnlConteudo;
+        private ComboBox cmbCondominio; 
+        private Label lblCondominioDetalhes;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             pnlMenu = new Panel();
@@ -35,6 +26,8 @@
             btnRelatorioFinanceiro = new Button();
             btnCalcularBalanco = new Button();
             pnlConteudo = new Panel();
+            cmbCondominio = new ComboBox();
+            lblCondominioDetalhes = new Label();
             pnlMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -64,11 +57,10 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Segoe UI", 16F);
             lblTitulo.ForeColor = SystemColors.WindowFrame;
             lblTitulo.Location = new Point(31, 52);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(137, 30);
+            lblTitulo.Size = new Size(75, 15);
             lblTitulo.TabIndex = 7;
             lblTitulo.Text = "FINANCEIRO";
             lblTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -109,6 +101,21 @@
             pnlConteudo.Name = "pnlConteudo";
             pnlConteudo.Size = new Size(596, 450);
             pnlConteudo.TabIndex = 2;
+            pnlConteudo.Paint += pnlConteudo_Paint;
+            // 
+            // cmbCondominio
+            // 
+            cmbCondominio.Location = new Point(0, 0);
+            cmbCondominio.Name = "cmbCondominio";
+            cmbCondominio.Size = new Size(121, 23);
+            cmbCondominio.TabIndex = 0;
+            // 
+            // lblCondominioDetalhes
+            // 
+            lblCondominioDetalhes.Location = new Point(10, 50);
+            lblCondominioDetalhes.Name = "lblCondominioDetalhes";
+            lblCondominioDetalhes.Size = new Size(400, 100);
+            lblCondominioDetalhes.TabIndex = 1;
             // 
             // GestaoFinanceira
             // 
@@ -118,21 +125,10 @@
             Controls.Add(pnlConteudo);
             Controls.Add(pnlMenu);
             Name = "GestaoFinanceira";
-            Text = "GestaoFinanceira";
+            Text = "Gestão Financeira";
             pnlMenu.ResumeLayout(false);
             pnlMenu.PerformLayout();
             ResumeLayout(false);
         }
-
-        #endregion
-
-        
-        private Panel pnlMenu;
-        private Button BtnFechar;
-        private Label lblTitulo;
-        private Button btnCalcularSaldo;
-        private Button btnRelatorioFinanceiro;
-        private Button btnCalcularBalanco;
-        private Panel pnlConteudo;
     }
 }

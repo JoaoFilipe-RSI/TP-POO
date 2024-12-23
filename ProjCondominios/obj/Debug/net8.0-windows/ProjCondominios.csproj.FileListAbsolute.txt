@@ -72,7 +72,6 @@ C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.GeneratedMSBui
 C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.AssemblyInfoInputs.cache
 C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.AssemblyInfo.cs
 C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.csproj.CoreCompileInputs.cache
-C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.sourcelink.json
 C:\CLONE\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.exe
 C:\CLONE\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.deps.json
 C:\CLONE\ProjCondominios\bin\Debug\net8.0-windows\ProjCondominios.runtimeconfig.json
@@ -91,3 +90,4 @@ C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.Gesta
 C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.GestaoReunioes.resources
 C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.GestaoDespesas.resources
 C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.GestaoPagamentos.resources
+C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.GestaoFinanceira.resources
