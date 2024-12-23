@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="UI Layer\GestaoCondominios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI Layer\GestaoCondominos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI Layer\GestaoDespesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI Layer\GestaoFinanceira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI Layer\GestaoFracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI Layer\GestaoPagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI Layer\GestaoReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI Layer\GestaoReunioes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI Layer\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

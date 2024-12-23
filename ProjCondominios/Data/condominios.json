@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Nome": "Edificio Cruz de Pedra",
+    "Endereco": "Guimarães",
+    "TipoCondominio": 0,
+    "OrcamentoAnual": 100000.0,
+    "Fracoes": []
+  },
+  {
+    "Id": 2,
+    "Nome": "Forum Vizela",
+    "Endereco": "Vizela",
+    "TipoCondominio": 1,
+    "OrcamentoAnual": 200000.0,
+    "Fracoes": []
+  },
+  {
+    "Id": 3,
+    "Nome": "ZI Gandarela",
+    "Endereco": "Guimarães",
+    "TipoCondominio": 2,
+    "OrcamentoAnual": 300000.0,
+    "Fracoes": []
+  }
+]

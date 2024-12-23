@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "Nome": "JJ",
+    "NIF": "11111",
+    "Contato": "911111111",
+    "TipoCondomino": 0,
+    "CondominioId": null,
+    "Condominio": null,
+    "FracaoAutonoma": null
+  },
+  {
+    "Id": 2,
+    "Nome": "Mourinho",
+    "NIF": "222222",
+    "Contato": "922222222",
+    "TipoCondomino": 0,
+    "CondominioId": null,
+    "Condominio": null,
+    "FracaoAutonoma": null
+  },
+  {
+    "Id": 3,
+    "Nome": "Amorim",
+    "NIF": "333333",
+    "Contato": "933333333",
+    "TipoCondomino": 1,
+    "CondominioId": null,
+    "Condominio": null,
+    "FracaoAutonoma": null
+  }
+]

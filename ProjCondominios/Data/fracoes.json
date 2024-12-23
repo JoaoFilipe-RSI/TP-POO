@@ -1,0 +1,112 @@
+[
+  {
+    "Identificacao": "A1",
+    "Area": 100.0,
+    "Permilagem": 2.0,
+    "Quota": 30.0,
+    "TipoFracao": 0,
+    "CondominioId": 1,
+    "ProprietarioId": 1,
+    "InquilinoId": 3,
+    "Condominio": {
+      "Id": 1,
+      "Nome": "Edificio Cruz de Pedra",
+      "Endereco": "Guimarães",
+      "TipoCondominio": 0,
+      "OrcamentoAnual": 100000.0,
+      "Fracoes": []
+    },
+    "Proprietario": {
+      "Id": 1,
+      "Nome": "JJ",
+      "NIF": "11111",
+      "Contato": "911111111",
+      "TipoCondomino": 0,
+      "CondominioId": null,
+      "Condominio": null,
+      "FracaoAutonoma": null,
+      "IsInquilino": false
+    },
+    "Inquilino": {
+      "Id": 3,
+      "Nome": "Amorim",
+      "NIF": "333333",
+      "Contato": "933333333",
+      "TipoCondomino": 1,
+      "CondominioId": null,
+      "Condominio": null,
+      "FracaoAutonoma": null,
+      "IsInquilino": true
+    }
+  },
+  {
+    "Identificacao": "1aaa",
+    "Area": 77.0,
+    "Permilagem": 77.0,
+    "Quota": 77.0,
+    "TipoFracao": 0,
+    "CondominioId": 1,
+    "ProprietarioId": 2,
+    "InquilinoId": null,
+    "Condominio": {
+      "Id": 1,
+      "Nome": "Edificio Cruz de Pedra",
+      "Endereco": "Guimarães",
+      "TipoCondominio": 0,
+      "OrcamentoAnual": 100000.0,
+      "Fracoes": []
+    },
+    "Proprietario": {
+      "Id": 2,
+      "Nome": "Mourinho",
+      "NIF": "222222",
+      "Contato": "922222222",
+      "TipoCondomino": 0,
+      "CondominioId": null,
+      "Condominio": null,
+      "FracaoAutonoma": null,
+      "IsInquilino": false
+    },
+    "Inquilino": null
+  },
+  {
+    "Identificacao": "1bbb",
+    "Area": 2.0,
+    "Permilagem": 2.0,
+    "Quota": 2.0,
+    "TipoFracao": 0,
+    "CondominioId": 2,
+    "ProprietarioId": 1,
+    "InquilinoId": 3,
+    "Condominio": {
+      "Id": 2,
+      "Nome": "Forum Vizela",
+      "Endereco": "Vizela",
+      "TipoCondominio": 1,
+      "OrcamentoAnual": 200000.0,
+      "Fracoes": []
+    },
+    "Proprietario": {
+      "Id": 1,
+      "Nome": "JJ",
+      "NIF": "11111",
+      "Contato": "911111111",
+      "TipoCondomino": 0,
+      "CondominioId": null,
+      "Condominio": null,
+      "FracaoAutonoma": null,
+      "IsInquilino": false
+    },
+    "Inquilino": {
+      "Id": 3,
+      "Nome": "Amorim",
+      "NIF": "333333",
+      "Contato": "933333333",
+      "TipoCondomino": 1,
+      "CondominioId": null,
+      "Condominio": null,
+      "FracaoAutonoma": null,
+      "IsInquilino": true
+    }
+  }
+]

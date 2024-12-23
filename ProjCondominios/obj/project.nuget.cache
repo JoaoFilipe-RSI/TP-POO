@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "i7JjanT7h3A=",
+  "success": true,
+  "projectFilePath": "C:\\CLONE\\ProjCondominios\\ProjCondominios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fferreira\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
