@@ -28,9 +28,9 @@ namespace ProjCondominios.UI_Layer
 
         private void ConfigurarTamanho()
         {
-            this.Size = _menuPrincipal.Size; // Ajusta o tamanho do formulário
-            this.StartPosition = FormStartPosition.Manual; // Define a posição manualmente
-            this.Location = _menuPrincipal.Location; // Ajusta a localização para coincidir com o MenuPrincipal
+            this.Size = _menuPrincipal.Size; 
+            this.StartPosition = FormStartPosition.Manual; 
+            this.Location = _menuPrincipal.Location; 
         }
         private void CarregarFormularioAdicionar()
         {
@@ -129,7 +129,6 @@ namespace ProjCondominios.UI_Layer
         {
             pnlConteudo.Controls.Clear();
 
-            // Implementar lógica semelhante a Adicionar, mas com edição de um condomínio existente.
             Label lblMensagem = new Label { Text = "Formulário de Edição ainda não implementado", Dock = DockStyle.Top };
             pnlConteudo.Controls.Add(lblMensagem);
         }

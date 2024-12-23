@@ -41,7 +41,7 @@ namespace ProjCondominios.Services
         }
 
         /// <summary>
-        /// Remove um condômino da lista com base no ID e salva as alterações.
+        /// Remove um condómino da lista com base no ID e salva as alterações.
         /// </summary>
         public void Remover(int id)
         {
@@ -54,12 +54,12 @@ namespace ProjCondominios.Services
         }
 
         /// <summary>
-        /// Retorna a lista completa de condôminos.
+        /// Retorna a lista completa de condóminos.
         /// </summary>
         public List<Condomino> ListarTodos() => _condominos;
 
         /// <summary>
-        /// Busca um condómino pelo ID.
+        /// Filtra um condómino pelo ID.
         /// </summary>
         public Condomino? BuscarPorId(int id)
         {
@@ -68,20 +68,19 @@ namespace ProjCondominios.Services
         }
 
         /// <summary>
-        /// Atualiza os dados de um condômino existente.
+        /// Atualiza os dados de um condómino existente.
         /// </summary>
         public void Atualizar(Condomino condominoAtualizado)
         {
             if (condominoAtualizado == null)
                 throw new ArgumentNullException(nameof(condominoAtualizado));
 
-            // Localiza o condômino na lista
             var condominoExistente = BuscarPorId(condominoAtualizado.Id);
 
             if (condominoExistente == null)
                 throw new InvalidOperationException($"Condómino com ID {condominoAtualizado.Id} não encontrado.");
 
-            // Atualiza as propriedades do condômino
+            // Atualiza as propriedades do condómino
             condominoExistente.Nome = condominoAtualizado.Nome;
             condominoExistente.NIF = condominoAtualizado.NIF;
             condominoExistente.Contato = condominoAtualizado.Contato;

@@ -38,9 +38,12 @@ namespace ProjCondominios.Services
             if (reserva.Condominio == null)
                 throw new ArgumentException("O campo 'Condomínio' é obrigatório. Certifique-se de selecionar um condomínio válido.");
 
+            if (reserva.Condomino == null)
+                throw new ArgumentException("O campo 'Condómino' é obrigatório.");
+
             if (_reservas.Any(r => r.Data == reserva.Data &&
                                    r.TipoReserva == reserva.TipoReserva &&
-                                   r.Condominio == reserva.Condominio &&
+                                   r.Condominio.Id == reserva.Condominio.Id &&
                                    ((reserva.HoraInicio >= r.HoraInicio && reserva.HoraInicio < r.HoraFim) ||
                                     (reserva.HoraFim > r.HoraInicio && reserva.HoraFim <= r.HoraFim))))
             {
@@ -49,6 +52,7 @@ namespace ProjCondominios.Services
 
             _reservas.Add(reserva);
         }
+
 
         public void CancelarReserva(Guid id)
         {
@@ -82,10 +86,7 @@ namespace ProjCondominios.Services
             reservaExistente.Condomino = reservaAtualizada.Condomino;
         }
 
-        public List<Reserva> ListarReservas()
-        {
-            return _reservas ?? new List<Reserva>();
-        }
+        public List<Reserva> ListarReservas() => _reservas;
 
         public List<Reserva> ListarReservasPorArea(TipoReserva tipo)
         {
@@ -99,7 +100,10 @@ namespace ProjCondominios.Services
 
         public List<Reserva> ListarReservasPorCondominio(Condominio condominio)
         {
-            return _reservas?.Where(r => r.Condominio == condominio).ToList() ?? new List<Reserva>();
+            if (condominio == null)
+                throw new ArgumentNullException(nameof(condominio), "O condomínio não pode ser nulo.");
+
+            return _reservas?.Where(r => r.Condominio.Id == condominio.Id).ToList() ?? new List<Reserva>();
         }
 
         #endregion

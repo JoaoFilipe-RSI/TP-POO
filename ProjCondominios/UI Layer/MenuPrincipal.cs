@@ -49,7 +49,7 @@ namespace ProjCondominios
             var condominos = _condominoService.Condominos;
             var fracoes = _fracaoService.ListarTodasFracoes();
         }
-        
+
         private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -79,7 +79,8 @@ namespace ProjCondominios
         private void GestaoReservasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Passa os serviços necessários ao formulário de gestão de reservas
-            var formGestaoReservas = new GestaoReservas(_reservaService, _condominioService, _condominoService, this);
+            var condominioSelecionado = _condominios.FirstOrDefault();
+            var formGestaoReservas = new GestaoReservas(this, condominioSelecionado);
             formGestaoReservas.Show();
         }
 
@@ -107,6 +108,10 @@ namespace ProjCondominios
             var formGestaoFinanceira = new GestaoFinanceira(_financeiroService, _condominios, this);
             formGestaoFinanceira.Show();
         }
-                
+
+        private void GestaoRelatoriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

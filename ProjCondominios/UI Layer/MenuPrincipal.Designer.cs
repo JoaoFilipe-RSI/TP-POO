@@ -61,12 +61,14 @@
             editarInformaçõesDeOcupanteToolStripMenuItem = new ToolStripMenuItem();
             listarUnidadesToolStripMenuItem = new ToolStripMenuItem();
             lblGESTAO = new Label();
+            relatóriosToolStripMenuItem = new ToolStripMenuItem();
+            GestaoRelatoriosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { condominiosToolStripMenuItem, condóminosToolStripMenuItem, reservasToolStripMenuItem, ContabilidadeToolStripMenuItem, sairToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { condominiosToolStripMenuItem, condóminosToolStripMenuItem, reservasToolStripMenuItem, ContabilidadeToolStripMenuItem, relatóriosToolStripMenuItem, sairToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(826, 24);
@@ -282,6 +284,20 @@
             lblGESTAO.Text = "GESTÃO DE CONDOMÍNIOS";
             lblGESTAO.TextAlign = ContentAlignment.TopCenter;
             // 
+            // relatóriosToolStripMenuItem
+            // 
+            relatóriosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { GestaoRelatoriosToolStripMenuItem });
+            relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+            relatóriosToolStripMenuItem.Size = new Size(71, 20);
+            relatóriosToolStripMenuItem.Text = "Relatórios";
+            // 
+            // GestaoRelatoriosToolStripMenuItem
+            // 
+            GestaoRelatoriosToolStripMenuItem.Name = "GestaoRelatoriosToolStripMenuItem";
+            GestaoRelatoriosToolStripMenuItem.Size = new Size(181, 22);
+            GestaoRelatoriosToolStripMenuItem.Text = "Gestão de Relatórios";
+            GestaoRelatoriosToolStripMenuItem.Click += GestaoRelatoriosToolStripMenuItem_Click;
+            // 
             // MenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -333,5 +349,7 @@
         private ToolStripMenuItem GestaoDespesasToolStripMenuItem;
         private ToolStripMenuItem GestaoPagamentosToolStripMenuItem1;
         private ToolStripMenuItem GestaoFinanceiraToolStripMenuItem;
+        private ToolStripMenuItem relatóriosToolStripMenuItem;
+        private ToolStripMenuItem GestaoRelatoriosToolStripMenuItem;
     }
 }

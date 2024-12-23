@@ -22,13 +22,24 @@ namespace ProjCondominios.Models
 
         #region Propriedades Públicas
         public Guid Id { get; private set; }
-        public string Descricao { get; set; }
+
+        public string Descricao
+        {
+            get => descricao;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("A descrição da reserva é obrigatória.");
+                descricao = value;
+            }
+        }
+
         public DateTime Data
         {
             get => data;
             set
             {
-                if (value < DateTime.Now.Date)
+                if (value.Date < DateTime.Now.Date)
                     throw new ArgumentException("A data da reserva não pode ser no passado.");
                 data = value;
             }
@@ -41,11 +52,8 @@ namespace ProjCondominios.Models
             {
                 horaInicio = value;
 
-                // Valida apenas se HoraFim já estiver definida
                 if (horaFim != default && horaInicio >= horaFim)
-                {
                     throw new ArgumentException("A hora de início deve ser antes da hora de término.");
-                }
             }
         }
 
@@ -56,11 +64,8 @@ namespace ProjCondominios.Models
             {
                 horaFim = value;
 
-                // Valida apenas se HoraInicio já estiver definida
                 if (horaInicio != default && horaFim <= horaInicio)
-                {
                     throw new ArgumentException("A hora de término deve ser após a hora de início.");
-                }
             }
         }
 
@@ -81,6 +86,7 @@ namespace ProjCondominios.Models
             get => condominio;
             set => condominio = value ?? throw new ArgumentNullException(nameof(Condominio), "Condomínio não pode ser nulo.");
         }
+
         #endregion
 
         #region Construtores
@@ -92,6 +98,8 @@ namespace ProjCondominios.Models
             HoraInicio = horaInicio;
             HoraFim = horaFim;
             TipoReserva = tipoReserva;
+            Condominio = condominio;
+            Condomino = condomino;
         }
         #endregion
     }

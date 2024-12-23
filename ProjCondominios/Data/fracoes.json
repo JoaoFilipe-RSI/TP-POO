@@ -14,7 +14,8 @@
       "Endereco": "Guimarães",
       "TipoCondominio": 0,
       "OrcamentoAnual": 100000.0,
-      "Fracoes": []
+      "Fracoes": [],
+      "Condominos": []
     },
     "Proprietario": {
       "Id": 1,
@@ -54,7 +55,8 @@
       "Endereco": "Guimarães",
       "TipoCondominio": 0,
       "OrcamentoAnual": 100000.0,
-      "Fracoes": []
+      "Fracoes": [],
+      "Condominos": []
     },
     "Proprietario": {
       "Id": 2,
@@ -84,7 +86,8 @@
       "Endereco": "Vizela",
       "TipoCondominio": 1,
       "OrcamentoAnual": 200000.0,
-      "Fracoes": []
+      "Fracoes": [],
+      "Condominos": []
     },
     "Proprietario": {
       "Id": 1,
@@ -108,5 +111,36 @@
       "FracaoAutonoma": null,
       "IsInquilino": true
     }
+  },
+  {
+    "Identificacao": "P1",
+    "Area": 400.0,
+    "Permilagem": 80.0,
+    "Quota": 100.0,
+    "TipoFracao": 3,
+    "CondominioId": 3,
+    "ProprietarioId": 2,
+    "InquilinoId": null,
+    "Condominio": {
+      "Id": 3,
+      "Nome": "ZI Gandarela",
+      "Endereco": "Guimarães",
+      "TipoCondominio": 2,
+      "OrcamentoAnual": 300000.0,
+      "Fracoes": [],
+      "Condominos": []
+    },
+    "Proprietario": {
+      "Id": 2,
+      "Nome": "Mourinho",
+      "NIF": "222222",
+      "Contato": "922222222",
+      "TipoCondomino": 0,
+      "CondominioId": null,
+      "Condominio": null,
+      "FracaoAutonoma": null,
+      "IsInquilino": false
+    },
+    "Inquilino": null
   }
 ]

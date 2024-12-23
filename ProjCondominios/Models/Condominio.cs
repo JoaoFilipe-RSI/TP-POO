@@ -39,7 +39,8 @@ namespace ProjCondominios.Models
             TipoCondominio = tipoCondominio;
             OrcamentoAnual = orcamentoAnual;
             condominos = new List<Condomino>();
-        }
+        }            
+
         #endregion
 
         #region Métodos
