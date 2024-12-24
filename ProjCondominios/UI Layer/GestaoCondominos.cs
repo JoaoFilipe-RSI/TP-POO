@@ -19,13 +19,12 @@ namespace ProjCondominios.UI_Layer
     {
         private readonly CondominoService _condominoService;
         private MenuPrincipal _menuPrincipal;
+        private Condomino _condominoAtual;
 
-        // Campos para controle de formulário
+        // Campos para controls de formulário
         private TextBox txtNome, txtNif, txtContato, txtId;
         private ComboBox cmbTipo;
         private Button btnSalvar;
-
-        private Condomino _condominoAtual; // Usado para edição
 
         // Construtor
         public GestaoCondominos(CondominoService condominoService, MenuPrincipal menuPrincipal)
@@ -43,7 +42,6 @@ namespace ProjCondominios.UI_Layer
             this.Location = _menuPrincipal.Location;
         }
 
-        // Evento Load
         private void GestaoCondominos_Load(object sender, EventArgs e)
         {
         
@@ -81,15 +79,11 @@ namespace ProjCondominios.UI_Layer
         {
             LimparPainel();
 
-            // Título do formulário
             Label lblTitulo = CriarLabel("ADICIONAR CONDÓMINO", 12);
             pnlConteudoCondonimos.Controls.Add(lblTitulo);
 
-            // Criar o formulário base (campos básicos: Nome, NIF, etc.)
             CriarFormularioBase();
 
-
-            // Botão Salvar
             btnSalvar = new Button
             {
                 Text = "Salvar",
@@ -100,7 +94,6 @@ namespace ProjCondominios.UI_Layer
             {
                 try
                 {
-                    // Criar e salvar o novo condômino
                     var novoCondomino = new Condomino
                     {
                         Nome = txtNome.Text,
@@ -183,7 +176,6 @@ namespace ProjCondominios.UI_Layer
             Label lblTitulo = CriarLabel("EDITAR CONDÓMINO", 12);
             CriarFormularioBase();
 
-            // Preencher os campos com os dados existentes
             txtId.Text = condomino.Id.ToString();
             txtNome.Text = condomino.Nome;
             txtNif.Text = condomino.NIF;

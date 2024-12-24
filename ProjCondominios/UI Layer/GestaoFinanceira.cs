@@ -36,18 +36,17 @@ namespace ProjCondominios.UI_Layer
             this.StartPosition = FormStartPosition.Manual;
             this.Location = _menuPrincipal.Location;
         }
+
         private void CarregarCondominios()
         {
             if (_condominios == null || !_condominios.Any())
             {
                 MessageBox.Show("Nenhum condomínio disponível.");
-                return; // Impede a execução se a lista estiver vazia
+                return; 
             }
 
-            // Limpa o painel antes de adicionar o DataGridView
             pnlConteudo.Controls.Clear();
 
-            // Criação e configuração do DataGridView
             var dgvCondominios = new DataGridView
             {
                 Dock = DockStyle.Fill,
@@ -58,7 +57,6 @@ namespace ProjCondominios.UI_Layer
                 SelectionMode = DataGridViewSelectionMode.FullRowSelect
             };
 
-            // Vincula os dados ao DataGridView
             dgvCondominios.DataSource = _condominios.Select(c => new
             {
                 Id = c.Id,
@@ -67,31 +65,26 @@ namespace ProjCondominios.UI_Layer
                 Tipo = c.TipoCondominio,
             }).ToList();
 
-            // Adiciona evento para manipular seleção
             dgvCondominios.CellDoubleClick += DgvCondominios_CellDoubleClick;
 
-            // Adiciona o DataGridView ao painel
             pnlConteudo.Controls.Add(dgvCondominios);
         }
+
         private void DgvCondominios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (sender is DataGridView dgv && e.RowIndex >= 0)
             {
-                // Obtém o nome do condomínio selecionado
                 string nomeCondominio = dgv.Rows[e.RowIndex].Cells["Nome"].Value.ToString();
                 MessageBox.Show($"Condomínio selecionado: {nomeCondominio}");
-
-                // Aqui, você pode implementar a lógica para carregar os detalhes do condomínio selecionado
             }
         }
+
         private void dgvCondominios_SelectionChanged(object sender, EventArgs e)
-        {// Verifica se há uma linha válida selecionada
+        {
             if (dgvCondominios.CurrentRow != null)
             {
-                // Obtém o ID do condomínio da célula "Id"
                 int idCondominio = Convert.ToInt32(dgvCondominios.CurrentRow.Cells["Id"].Value);
 
-                // Localiza o condomínio na lista
                 _condominioSelecionado = _condominios.FirstOrDefault(c => c.Id == idCondominio);
             }
         }
@@ -139,7 +132,6 @@ namespace ProjCondominios.UI_Layer
             this.Close();
         }
 
-
         public void SetCondominioAtual(Condominio condominio)
         {
             _condominioAtual = condominio;
@@ -148,11 +140,9 @@ namespace ProjCondominios.UI_Layer
 
         private string GerarRelatorioFinanceiro()
         {
-            // relatório financeiro simples
             var relatorio = $"Relatório Financeiro de {_condominioAtual.Nome}\n\n";
             relatorio += $"Orçamento Anual: {_condominioAtual.OrcamentoAnual:C}\n";
 
-            // Aqui podemos adicionar outras informações como receitas, despesas e balanços
             decimal receitasTotais = _financeiroService.ObterTotalPagamentos(_condominioAtual);
             decimal despesasTotais = _financeiroService.ObterTotalDespesas(_condominioAtual);
 
@@ -161,11 +151,6 @@ namespace ProjCondominios.UI_Layer
             relatorio += $"Balanço Final: {receitasTotais - despesasTotais:C}\n";
 
             return relatorio;
-        }
-
-        private void pnlConteudo_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

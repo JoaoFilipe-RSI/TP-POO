@@ -43,7 +43,6 @@ namespace ProjCondominios.UI_Layer
             this.Location = _menuPrincipal.Location;
         }
 
-        // Método para carregar o formulário de adicionar fração
         private void CarregarFormularioAdicionar()
         {
             pnlConteudoFracoes.Controls.Clear();
@@ -66,7 +65,7 @@ namespace ProjCondominios.UI_Layer
             ComboBox cmbTipoFracao = new ComboBox
             {
                 Dock = DockStyle.Top,
-                DataSource = Enum.GetValues(typeof(TipoFracao)) // Preenche com os valores do enum
+                DataSource = Enum.GetValues(typeof(TipoFracao))
             };
 
             Label lblCondominio = new Label { Text = "Condomínio:", Dock = DockStyle.Top };
@@ -194,7 +193,7 @@ namespace ProjCondominios.UI_Layer
             ComboBox cmbCondominios = new ComboBox
             {
                 Dock = DockStyle.Top,
-                DataSource = _condominioService.Condominios.ToList(), // Garante que os dados estão disponíveis
+                DataSource = _condominioService.Condominios.ToList(),
                 DisplayMember = "Nome",
                 ValueMember = "Id"
             };
@@ -216,9 +215,8 @@ namespace ProjCondominios.UI_Layer
             {
                 if (cmbCondominios.SelectedItem is Condominio condominioSelecionado)
                 {
-                    // Obter as frações do condomínio selecionado
                     var fracoesDetalhadas = _fracaoService
-                        .ListarFracoesPorCondominio(condominioSelecionado.Id) // Filtra frações pelo condomínio
+                        .ListarFracoesPorCondominio(condominioSelecionado.Id)
                         .Select(fracao => new
                         {
                             Identificacao = fracao.Identificacao,
@@ -231,7 +229,6 @@ namespace ProjCondominios.UI_Layer
                             Quota = $"{fracao.Quota:C}"
                         }).ToList();
 
-                    // Atualiza o DataGridView com os detalhes das frações
                     dgvFracoes.DataSource = fracoesDetalhadas;
 
                     if (!fracoesDetalhadas.Any())
@@ -245,7 +242,6 @@ namespace ProjCondominios.UI_Layer
                 }
             };
 
-            // Adiciona os controles ao painel
             pnlConteudoFracoes.Controls.Add(dgvFracoes);
             pnlConteudoFracoes.Controls.Add(btnListarFracoes);
             pnlConteudoFracoes.Controls.Add(cmbCondominios);
@@ -256,7 +252,6 @@ namespace ProjCondominios.UI_Layer
         {
             pnlConteudoFracoes.Controls.Clear();
 
-            // Label para selecionar o condomínio
             Label lblCondominio = new Label
             {
                 Text = "Selecione o Condomínio:",
@@ -264,14 +259,12 @@ namespace ProjCondominios.UI_Layer
                 TextAlign = ContentAlignment.MiddleLeft
             };
 
-            // ComboBox para listar os condomínios
             ComboBox cmbCondominios = new ComboBox
             {
                 Dock = DockStyle.Top,
                 DropDownStyle = ComboBoxStyle.DropDownList
             };
 
-            // Label para selecionar a fração
             Label lblFracao = new Label
             {
                 Text = "Selecione a Fração:",
@@ -279,26 +272,23 @@ namespace ProjCondominios.UI_Layer
                 TextAlign = ContentAlignment.MiddleLeft
             };
 
-            // ComboBox para listar as frações
             ComboBox cmbFracoes = new ComboBox
             {
                 Dock = DockStyle.Top,
                 DropDownStyle = ComboBoxStyle.DropDownList,
-                Enabled = false // Inicialmente desativado
+                Enabled = false
             };
 
-            // Botão para remover a fração
             Button btnRemover = new Button
             {
                 Text = "Remover",
                 Dock = DockStyle.Top,
-                Enabled = false // Inicialmente desativado
+                Enabled = false 
             };
 
-            // Carregar os condomínios no ComboBox
             var condominios = _condominioService.Condominios.ToList();
 
-            cmbCondominios.Items.Clear(); // Limpa o ComboBox
+            cmbCondominios.Items.Clear(); 
             if (condominios.Any())
             {
                 cmbCondominios.DataSource = condominios;
@@ -310,8 +300,6 @@ namespace ProjCondominios.UI_Layer
                 MessageBox.Show("Nenhum condomínio encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            // Evento para carregar as frações ao selecionar um condomínio
             cmbCondominios.SelectedIndexChanged += (s, e) =>
             {
                 if (cmbCondominios.SelectedItem is Condominio condominioSelecionado)
@@ -326,7 +314,7 @@ namespace ProjCondominios.UI_Layer
                         cmbFracoes.DisplayMember = "Identificacao";
                         cmbFracoes.ValueMember = "Identificacao";
                         cmbFracoes.Enabled = true;
-                        btnRemover.Enabled = false; // Botão desativado até que a fração seja selecionada
+                        btnRemover.Enabled = false;
                     }
                     else
                     {
@@ -337,13 +325,12 @@ namespace ProjCondominios.UI_Layer
                 }
             };
 
-            // Evento para habilitar o botão de remoção ao selecionar uma fração
+            // Evento para habilitar o botão de remover ao selecionar uma fração
             cmbFracoes.SelectedIndexChanged += (s, e) =>
             {
                 btnRemover.Enabled = cmbFracoes.SelectedIndex >= 0;
             };
 
-            // Evento de clique do botão de remoção
             btnRemover.Click += (s, e) =>
             {
                 if (cmbCondominios.SelectedItem is Condominio condominioSelecionado &&
@@ -355,7 +342,6 @@ namespace ProjCondominios.UI_Layer
                     {
                         MessageBox.Show("Fração removida com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        // Atualiza a lista de frações no ComboBox
                         var fracoesAtualizadas = _fracaoService.ListarFracoesPorCondominio(condominioSelecionado.Id);
                         cmbFracoes.DataSource = fracoesAtualizadas;
 
@@ -378,7 +364,6 @@ namespace ProjCondominios.UI_Layer
                 }
             };
 
-            // Adicionar controles ao painel
             pnlConteudoFracoes.Controls.Add(btnRemover);
             pnlConteudoFracoes.Controls.Add(cmbFracoes);
             pnlConteudoFracoes.Controls.Add(lblFracao);
@@ -422,7 +407,6 @@ namespace ProjCondominios.UI_Layer
                 Font = new Font("Arial", 12, FontStyle.Bold)
             };
 
-            // ComboBox para selecionar a fração a ser editada
             Label lblSelecionar = new Label { Text = "Selecionar Fração:", Dock = DockStyle.Top };
             ComboBox cmbFracao = new ComboBox
             {
@@ -431,7 +415,6 @@ namespace ProjCondominios.UI_Layer
                 DisplayMember = "Identificacao"
             };
 
-            // Campos para edição
             Label lblArea = new Label { Text = "Área:", Dock = DockStyle.Top };
             TextBox txtArea = new TextBox { Dock = DockStyle.Top };
 
@@ -484,10 +467,8 @@ namespace ProjCondominios.UI_Layer
                 ValueMember = "Id"
             };
 
-            // Botão para salvar alterações
             Button btnSalvar = new Button { Text = "Salvar Alterações", Dock = DockStyle.Top };
 
-            // Evento para preencher campos ao selecionar uma fração
             cmbFracao.SelectedIndexChanged += (s, e) =>
             {
                 var fracaoSelecionada = cmbFracao.SelectedItem as FracaoAutonoma;
@@ -504,7 +485,6 @@ namespace ProjCondominios.UI_Layer
                 }
             };
 
-            // Evento de salvar alterações
             btnSalvar.Click += (s, e) =>
             {
                 try
@@ -516,7 +496,6 @@ namespace ProjCondominios.UI_Layer
                         return;
                     }
 
-                    // Validações e atualizações
                     decimal novaArea = decimal.Parse(txtArea.Text);
                     decimal novaPermilagem = decimal.Parse(txtPermilagem.Text);
                     decimal novaQuota = decimal.Parse(txtQuota.Text);
@@ -525,7 +504,6 @@ namespace ProjCondominios.UI_Layer
                     int novoProprietarioId = (int)cmbProprietario.SelectedValue;
                     int? novoInquilinoId = cmbInquilino.SelectedValue.ToString() == "N/A" ? null : (int?)cmbInquilino.SelectedValue;
 
-                    // Atualiza a fração no serviço
                     _fracaoService.AtualizarFracao(
                         fracaoSelecionada.Identificacao,
                         novaArea,
@@ -536,7 +514,6 @@ namespace ProjCondominios.UI_Layer
                         novoInquilinoId
                     );
 
-                    // Atualiza a UI com os dados editados
                     cmbFracao.DataSource = null;
                     cmbFracao.DataSource = _fracaoService.ListarTodasFracoes();
                     cmbFracao.DisplayMember = "Identificacao";
@@ -549,7 +526,6 @@ namespace ProjCondominios.UI_Layer
                 }
             };
 
-            // Adiciona controles ao painel
             pnlConteudoFracoes.Controls.Add(btnSalvar);
             pnlConteudoFracoes.Controls.Add(cmbInquilino);
             pnlConteudoFracoes.Controls.Add(lblInquilino);
@@ -579,10 +555,10 @@ namespace ProjCondominios.UI_Layer
                 AllowUserToAddRows = false,
                 AllowUserToDeleteRows = false
             };
-            //this.Controls.Add(dgvFracoes);
             pnlConteudoFracoes.Controls.Clear();
             //pnlConteudoFracoes.Controls.Add(dgvFracoes);
         }
+
         private void AtualizarListaFracoes(List<FracaoAutonoma> fracoes)
         {
             dgvFracoes.DataSource = null;
@@ -593,12 +569,13 @@ namespace ProjCondominios.UI_Layer
         {
             return (List<FracaoAutonoma>)dgvFracoes.DataSource;
         }
+
         private void CarregarFracoes()
         {
             try
             {
                 var fracoes = _fracaoService.CarregarFracoes();
-                AtualizarListaFracoes(fracoes); // Atualiza a UI com as frações carregadas
+                AtualizarListaFracoes(fracoes); 
             }
             catch (Exception ex)
             {
@@ -629,6 +606,7 @@ namespace ProjCondominios.UI_Layer
         {
             CarregarFormularioRemover();
         }
+
         private void btnEditar_Click(object sender, EventArgs e)
         {
             CarregarFormularioEditar();

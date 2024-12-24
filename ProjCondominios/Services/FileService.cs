@@ -12,12 +12,15 @@ namespace ProjCondominios.Services
 {
     public class FileService
     {
+        #region Propriedades privadas
         // Caminhos completos dos arquivos JSON
         private string _diretorioBase = @"C:\CLONE\ProjCondominios\Data";
         private string _caminhoArquivoCondominios;
         private string _caminhoArquivoCondominos;
         private string _caminhoArquivoFracoes;
+        #endregion
 
+        #region Construtor
         public FileService()
         {
             // Definindo os caminhos dos arquivos JSON
@@ -31,8 +34,10 @@ namespace ProjCondominios.Services
                 Directory.CreateDirectory(_diretorioBase);
             }
         }
+        #endregion
 
-        // Salva os dados dos condomínios em um arquivo JSON
+        #region metodos
+        // Salva os dados dos condomínios num arquivo JSON
         public void SalvarCondominios(List<Condominio> condominios)
         {
             var json = JsonConvert.SerializeObject(condominios, Formatting.Indented);
@@ -50,14 +55,14 @@ namespace ProjCondominios.Services
             return new List<Condominio>();
         }
 
-        // Salva os dados dos condóminos em um arquivo JSON
+        // Salva os dados dos condóminos num arquivo JSON
         public void SalvarCondominos(List<Condomino> condominos)
         {
             var json = JsonConvert.SerializeObject(condominos, Formatting.Indented);
             File.WriteAllText(_caminhoArquivoCondominos, json);
         }
 
-        // Carrega os dados dos condôminos a partir de um arquivo JSON
+        // Carrega os dados dos condóminos a partir de um arquivo JSON
         public List<Condomino> CarregarCondominos()
         {
             if (File.Exists(_caminhoArquivoCondominos))
@@ -67,6 +72,8 @@ namespace ProjCondominios.Services
             }
             return new List<Condomino>();
         }
+
+        // Salva os dados das frações num arquivo JSON
         public void SalvarFracoes(List<FracaoAutonoma> fracoes)
         {
             try
@@ -85,6 +92,8 @@ namespace ProjCondominios.Services
                 throw new Exception("Erro ao salvar frações: " + ex.Message);
             }
         }
+
+        // Carrega os dados das frações a partir de um arquivo JSON
         public List<FracaoAutonoma> CarregarFracoes()
         {
             try
@@ -100,5 +109,6 @@ namespace ProjCondominios.Services
                 throw new Exception("Erro ao carregar frações: " + ex.Message);
             }
         }
+        #endregion
     }
 }

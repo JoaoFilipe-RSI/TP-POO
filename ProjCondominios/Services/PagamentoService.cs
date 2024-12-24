@@ -54,8 +54,7 @@ namespace ProjCondominios.Services
             return _pagamentos.FindAll(p => p.Condominio == condominio);
         }
 
-
-        // adicionar funcionalidades como cálculo de total recebido, listagem e pagamentos em falta.
+        // adicionar outras funcionalidades como cálculo de total recebido, listagem e pagamentos em falta.
 
         #endregion
     }

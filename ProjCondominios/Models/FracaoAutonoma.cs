@@ -45,7 +45,8 @@ namespace ProjCondominios.Models
             ProprietarioId = proprietarioId;
             InquilinoId = inquilinoId;
         }
-
+        #endregion
+        #region Metodos
         // Método para associar objetos relacionados
         public void AssociarObjetos(Condominio condominio, Condomino proprietario, Condomino? inquilino = null)
         {

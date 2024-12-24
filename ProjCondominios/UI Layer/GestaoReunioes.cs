@@ -29,10 +29,11 @@ namespace ProjCondominios.UI_Layer
         }
         private void ConfigurarTamanho()
         {
-            this.Size = _menuPrincipal.Size; // Ajusta o tamanho do formulário
-            this.StartPosition = FormStartPosition.Manual; // Define a posição manualmente
-            this.Location = _menuPrincipal.Location; // Ajusta a localização para coincidir com o MenuPrincipal
+            this.Size = _menuPrincipal.Size; 
+            this.StartPosition = FormStartPosition.Manual; 
+            this.Location = _menuPrincipal.Location; 
         }
+
         private void GestaoReunioes_Load(object sender, EventArgs e)
         {
             AtualizarProximasReunioes();
@@ -148,7 +149,6 @@ namespace ProjCondominios.UI_Layer
                 Width = 200,
                 Height = 100
             };
-            // Adiciona participantes fictícios ou baseados nos dados do sistema
             foreach (var participante in _reuniaoService.ListarReunioes())
             {
                 clbParticipantes.Items.Add(participante);
@@ -187,7 +187,6 @@ namespace ProjCondominios.UI_Layer
         {
             MostrarFormularioAdicionar();
 
-            // Preenche os campos com os dados da reunião existente
             var dtpDataHora = (DateTimePicker)pnlConteudo.Controls.OfType<DateTimePicker>().FirstOrDefault();
             var txtLocal = (TextBox)pnlConteudo.Controls.OfType<TextBox>().FirstOrDefault(c => c.Location.Y == 90);
             var txtPauta = (TextBox)pnlConteudo.Controls.OfType<TextBox>().FirstOrDefault(c => c.Location.Y == 130);
@@ -206,7 +205,6 @@ namespace ProjCondominios.UI_Layer
             var btnSalvar = (Button)pnlConteudo.Controls.OfType<Button>().FirstOrDefault();
             btnSalvar.Click += (s, e) =>
             {
-                // Atualiza a reunião com os novos valores
                 reuniao.DataHora = dtpDataHora.Value;
                 reuniao.Local = txtLocal.Text;
                 reuniao.Pauta = txtPauta.Text;
@@ -217,7 +215,6 @@ namespace ProjCondominios.UI_Layer
                     reuniao.AdicionarParticipante((Condomino)participante);
                 }
 
-                // Chama o serviço para atualizar
                 _reuniaoService.AtualizarReuniao(reuniao);
 
                 MessageBox.Show("Reunião atualizada com sucesso!");

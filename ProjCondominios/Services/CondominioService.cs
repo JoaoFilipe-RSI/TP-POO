@@ -27,8 +27,8 @@ namespace ProjCondominios.Services
 
         public CondominioService()
         {
-            _jsonFileService = new FileService(); // Inicia o serviço de persistência
-            _condominios = _jsonFileService.CarregarCondominios(); // Carrega os condomínios existentes
+            _jsonFileService = new FileService(); 
+            _condominios = _jsonFileService.CarregarCondominios(); 
         }
         #endregion
 
@@ -40,6 +40,7 @@ namespace ProjCondominios.Services
             return _condominios;
         }
 
+        // Método para obter condomínio por Id
         public Condominio? ObterPorId(int id)
         {
             return _condominios.FirstOrDefault(c => c.Id == id);

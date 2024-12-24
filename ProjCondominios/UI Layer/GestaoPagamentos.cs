@@ -21,9 +21,9 @@ namespace ProjCondominios.UI_Layer
         public GestaoPagamentos(PagamentoService pagamentoService, List<Condominio> condominios, MenuPrincipal menuPrincipal)
         {
             InitializeComponent();
-            _pagamentoService = pagamentoService; // ?? throw new ArgumentNullException(nameof(pagamentoService));
-            _condominios = condominios; //condominios ?? throw new ArgumentNullException(nameof(condominios));
-            _menuPrincipal = menuPrincipal; // ?? throw new ArgumentNullException(nameof(menuPrincipal));
+            _pagamentoService = pagamentoService;
+            _condominios = condominios; 
+            _menuPrincipal = menuPrincipal; 
 
             ConfigurarTamanho();
         }
@@ -66,32 +66,26 @@ namespace ProjCondominios.UI_Layer
         {
             LimparPainelConteudo();
 
-            // Criação do rótulo e ComboBox para Condomínio
             var lblCondominio = new Label { Text = "Condomínio:", Top = 20, Left = 20, Width = 100 };
             var cmbCondominio = new ComboBox { Top = 40, Left = 20, Width = 200 };
 
-            // Configuração da fonte de dados da ComboBox Condomínio
-            cmbCondominio.DataSource = _condominios; // Lista global de condomínios
+            cmbCondominio.DataSource = _condominios; 
             cmbCondominio.DisplayMember = "Nome";
             cmbCondominio.ValueMember = "Id";
 
-            // Criação do rótulo e ComboBox para Condômino
             var lblCondomino = new Label { Text = "Condómino:", Top = 80, Left = 20, Width = 100 };
             var cmbCondomino = new ComboBox { Top = 100, Left = 20, Width = 200 };
 
-            // Evento para atualizar condôminos ao mudar o condomínio
             cmbCondominio.SelectedIndexChanged += (s, e) =>
             {
                 AtualizarCondominos(cmbCondominio, cmbCondomino);
             };
 
-            // Adiciona os controles ao painel ou formulário
             this.Controls.Add(lblCondominio);
             this.Controls.Add(cmbCondominio);
             this.Controls.Add(lblCondomino);
             this.Controls.Add(cmbCondomino);
 
-            // Atualizar condôminos ao carregar o formulário
             AtualizarCondominos(cmbCondominio, cmbCondomino);
 
             var lblDescricao = new Label { Text = "Descrição (Mês):", Top = 140, Left = 20, Width = 150 };
@@ -138,15 +132,12 @@ namespace ProjCondominios.UI_Layer
             {
                 int condominioId;
 
-                // Tente converter o valor selecionado para um ID válido
                 if (int.TryParse(cmbCondominio.SelectedValue.ToString(), out condominioId))
                 {
-                    // Encontra o condomínio selecionado
                     var condominioSelecionado = _condominios.FirstOrDefault(c => c.Id == condominioId);
 
                     if (condominioSelecionado != null)
                     {
-                        // Atualiza a fonte de dados da ComboBox de condôminos
                         cmbCondomino.DataSource = condominioSelecionado.Condominos.ToList();
                         cmbCondomino.DisplayMember = "Nome";
                         cmbCondomino.ValueMember = "Id";
@@ -154,7 +145,6 @@ namespace ProjCondominios.UI_Layer
                     }
                 }
             }
-
             // Se não houver condomínio selecionado ou condôminos, limpa a ComboBox
             cmbCondomino.DataSource = null;
         }
@@ -163,7 +153,6 @@ namespace ProjCondominios.UI_Layer
         {
             LimparPainelConteudo();
 
-            // Seleção de pagamento
             var lblPagamento = new Label { Text = "Selecione um Pagamento:", Top = 20, Left = 20, Width = 200 };
             var cmbPagamentos = new ComboBox { Top = 40, Left = 20, Width = 300 };
             cmbPagamentos.DataSource = _pagamentoService.ListarPagamentos();
@@ -173,7 +162,6 @@ namespace ProjCondominios.UI_Layer
             var lblNovoValor = new Label { Text = "Novo Valor (€):", Top = 80, Left = 20, Width = 200 };
             var txtNovoValor = new TextBox { Top = 100, Left = 20, Width = 200 };
 
-            // Botão para salvar alterações
             var btnSalvar = new Button { Text = "Salvar Alterações", Top = 140, Left = 20, Width = 200 };
             btnSalvar.Click += (s, e) =>
             {
@@ -197,14 +185,12 @@ namespace ProjCondominios.UI_Layer
         {
             LimparPainelConteudo();
 
-            // Seleção de pagamento
             var lblPagamento = new Label { Text = "Selecione um Pagamento para remover:", Top = 20, Left = 20, Width = 300 };
             var cmbPagamentos = new ComboBox { Top = 40, Left = 20, Width = 300 };
             cmbPagamentos.DataSource = _pagamentoService.ListarPagamentos();
             cmbPagamentos.DisplayMember = "Descricao";
             cmbPagamentos.ValueMember = "Id";
 
-            // Botão para remover
             var btnRemover = new Button { Text = "Remover Pagamento", Top = 80, Left = 20, Width = 200 };
             btnRemover.Click += (s, e) =>
             {
@@ -245,8 +231,8 @@ namespace ProjCondominios.UI_Layer
             dgvPagamentos.Rows.Add(
                 pagamento.Descricao ?? "N/A",
                 pagamento.ValorQuota.ToString("C"),
-                pagamento.Condominio?.Nome ?? "N/A", // Verificação de nulo
-                pagamento.Condomino?.Nome ?? "N/A", // Verificação de nulo
+                pagamento.Condominio?.Nome ?? "N/A", 
+                pagamento.Condomino?.Nome ?? "N/A", 
                 pagamento.DataHoraPagamento.ToString("dd/MM/yyyy")
             );
         }

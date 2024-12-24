@@ -91,3 +91,4 @@ C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.Gesta
 C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.GestaoDespesas.resources
 C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.GestaoPagamentos.resources
 C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.GestaoFinanceira.resources
+C:\CLONE\ProjCondominios\obj\Debug\net8.0-windows\ProjCondominios.UI_Layer.GestaoRelatorios.resources

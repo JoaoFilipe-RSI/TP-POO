@@ -21,15 +21,15 @@ namespace ProjCondominios.Services
         #region Construtores
         public CondominoService()
         {
-            _jsonFileService = new FileService(); // Inicializa o serviço de persistência
-            _condominos = _jsonFileService.CarregarCondominos() ?? new List<Condomino>(); // Garante lista não nula
+            _jsonFileService = new FileService(); 
+            _condominos = _jsonFileService.CarregarCondominos() ?? new List<Condomino>(); 
         }
         #endregion
 
         #region Métodos
 
         /// <summary>
-        /// Adiciona um novo condômino à lista e persiste no arquivo.
+        /// Adiciona um novo condómino à lista e persiste no arquivo.
         /// </summary>
         public void Adicionar(Condomino condomino)
         {
@@ -90,7 +90,7 @@ namespace ProjCondominios.Services
         }
 
         /// <summary>
-        /// Persiste as alterações na lista de condôminos.
+        /// Persiste as alterações na lista de condóminos.
         /// </summary>
         private void PersistirAlteracoes()
         {

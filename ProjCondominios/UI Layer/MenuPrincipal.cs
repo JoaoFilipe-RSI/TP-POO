@@ -17,6 +17,7 @@ namespace ProjCondominios
         private readonly ReservaService _reservaService;
         private readonly ReuniaoService _reuniaoService;
         private readonly RelatorioService _relatorioService;
+        private readonly IRelatorioService _irelatorioService;
         private readonly DespesaService _despesaService;
         private readonly PagamentoService _pagamentoService;
         private readonly FinanceiroService _financeiroService;
@@ -27,7 +28,6 @@ namespace ProjCondominios
         {
             InitializeComponent();
 
-            // Inicializar serviços compartilhados
             _fileService = new FileService();
             _condominioService = new CondominioService();
             _condominoService = new CondominoService();
@@ -38,13 +38,13 @@ namespace ProjCondominios
             _pagamentoService = new PagamentoService();
             _calculosFinanceirosService = new CalculosFinanceirosService();
             _financeiroService = new FinanceiroService(_pagamentoService, _despesaService, _calculosFinanceirosService);
+            _relatorioService = new RelatorioService(_pagamentoService, _despesaService, _reservaService);
             _condominios = _condominioService.ObterCondominios();
         }
 
         // Carregar os dados ao abrir o formulário
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
-            // Carregar dados iniciais 
             var condominios = _condominioService.Condominios;
             var condominos = _condominoService.Condominos;
             var fracoes = _fracaoService.ListarTodasFracoes();
@@ -57,36 +57,30 @@ namespace ProjCondominios
 
         private void GestaoCondominiosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Passa os serviços necessários ao formulário de gestão de condomínios
             var formGestaoCondominios = new GestaoCondominios(_condominioService, this);
             formGestaoCondominios.Show();
         }
 
         private void GestaoCondominosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Passa os serviços necessários ao formulário de gestão de condóminos
             var formGestaoCondominos = new GestaoCondominos(_condominoService, this);
             formGestaoCondominos.Show();
         }
 
         private void GestaoFracoesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Passa os serviços necessários ao formulário de gestão de frações
             var formGestaoFracoes = new GestaoFracoes(_fracaoService, _condominioService, _condominoService, this);
             formGestaoFracoes.Show();
         }
 
         private void GestaoReservasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Passa os serviços necessários ao formulário de gestão de reservas
-            var condominioSelecionado = _condominios.FirstOrDefault();
-            var formGestaoReservas = new GestaoReservas(this, condominioSelecionado);
+            var formGestaoReservas = new GestaoReservas(_reservaService, _condominioService, _condominoService, this);
             formGestaoReservas.Show();
         }
 
         private void GestaoReunioesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Passa os serviços necessários ao formulário de gestão de reuniões
             var formGestaoReunioes = new GestaoReunioes(_reuniaoService, _relatorioService, this);
             formGestaoReunioes.Show();
         }
@@ -111,7 +105,8 @@ namespace ProjCondominios
 
         private void GestaoRelatoriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var formGestaoRelatorios = new GestaoRelatorios(_relatorioService, this);
+            formGestaoRelatorios.Show();
         }
     }
 }

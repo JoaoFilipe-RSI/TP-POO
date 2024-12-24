@@ -29,18 +29,18 @@ namespace ProjCondominios.Services
             _condominoService = condominoService ?? throw new ArgumentNullException(nameof(condominoService));
             _jsonFileService = fileService ?? throw new ArgumentNullException(nameof(fileService));
 
-            _fracoes = fracoes ?? _jsonFileService.CarregarFracoes(); // Usa frações fornecidas ou carrega do arquivo
-            CorrigirDadosFracoes(); // Corrige os dados imediatamente após o carregamento
+            _fracoes = fracoes ?? _jsonFileService.CarregarFracoes(); 
+            CorrigirDadosFracoes(); 
         }
         #endregion
 
         #region Métodos
 
+        // Método para carregar os dados do JSON
         public List<FracaoAutonoma> CarregarFracoes()
         {
             try
             {
-                // Verifica se o serviço de arquivos está inicializado
                 if (_jsonFileService == null)
                 {
                     throw new InvalidOperationException("O serviço de arquivos JSON não foi inicializado.");
@@ -51,33 +51,28 @@ namespace ProjCondominios.Services
                 var condominios = _jsonFileService.CarregarCondominios();
                 var condominos = _jsonFileService.CarregarCondominos();
 
-                // Atualizar a lista interna de frações
                 _fracoes.Clear();
 
                 foreach (var fracao in fracoes)
                 {
-                    // Buscar os objetos relacionados
                     var condominio = _condominioService.ObterPorId(fracao.CondominioId);
                     var proprietario = _condominoService.BuscarPorId(fracao.ProprietarioId);
                     var inquilino = fracao.InquilinoId.HasValue
                         ? _condominoService.BuscarPorId(fracao.InquilinoId.Value)
                         : null;
 
-                    // Valida se os objetos foram encontrados
                     if (condominio == null)
                         throw new Exception($"Condomínio não encontrado para a fração {fracao.Identificacao}.");
 
                     if (proprietario == null)
                         throw new Exception($"Proprietário não encontrado para a fração {fracao.Identificacao}.");
 
-                    // Associa os objetos relacionados à fração
                     fracao.AssociarObjetos(condominio, proprietario, inquilino);
 
-                    // Adiciona a fração à lista interna
                     _fracoes.Add(fracao);
                 }
 
-                return _fracoes; // Retorna as frações carregadas e associadas
+                return _fracoes; 
             }
             catch (Exception ex)
             {
@@ -86,52 +81,45 @@ namespace ProjCondominios.Services
         }
 
         // Método para adicionar uma fração autónoma
-        public void AdicionarFracao(
-    string identificacao, decimal area, decimal permilagem, decimal quota,
-    TipoFracao tipoFracao, int condominioId, int proprietarioId, int? inquilinoId)
-        {
-            try
-            {
-                // Validações básicas
-                if (string.IsNullOrWhiteSpace(identificacao))
-                    throw new ArgumentException("Identificação é obrigatória.");
+        public void AdicionarFracao(string identificacao, decimal area, decimal permilagem, decimal quota,TipoFracao tipoFracao, int condominioId, int proprietarioId, int? inquilinoId)
+                {
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(identificacao))
+                        throw new ArgumentException("Identificação é obrigatória.");
 
-                if (area <= 0 || permilagem <= 0 || quota < 0)
-                    throw new ArgumentException("Valores inválidos para área, permilagem ou quota.");
+                    if (area <= 0 || permilagem <= 0 || quota < 0)
+                        throw new ArgumentException("Valores inválidos para área, permilagem ou quota.");
 
-                if (condominioId <= 0 || proprietarioId <= 0)
-                    throw new ArgumentException("IDs inválidos para condomínio ou proprietário.");
+                    if (condominioId <= 0 || proprietarioId <= 0)
+                        throw new ArgumentException("IDs inválidos para condomínio ou proprietário.");
 
-                // Obter os objetos relacionados
-                var condominio = _condominioService.ObterPorId(condominioId)
-                    ?? throw new Exception($"Condomínio com ID {condominioId} não encontrado.");
+                    var condominio = _condominioService.ObterPorId(condominioId)
+                        ?? throw new Exception($"Condomínio com ID {condominioId} não encontrado.");
 
-                var proprietario = _condominoService.BuscarPorId(proprietarioId)
-                    ?? throw new Exception($"Proprietário com ID {proprietarioId} não encontrado.");
+                    var proprietario = _condominoService.BuscarPorId(proprietarioId)
+                     ?? throw new Exception($"Proprietário com ID {proprietarioId} não encontrado.");
 
-                var inquilino = inquilinoId.HasValue
-                    ? _condominoService.BuscarPorId(inquilinoId.Value)
-                    : null;
+                    var inquilino = inquilinoId.HasValue
+                        ? _condominoService.BuscarPorId(inquilinoId.Value)
+                        : null;
 
-                // Criar a nova fração
-                var novaFracao = new FracaoAutonoma(
-                    identificacao, area, permilagem, quota, tipoFracao, condominioId, proprietarioId, inquilinoId
-                );
+                    var novaFracao = new FracaoAutonoma(
+                        identificacao, area, permilagem, quota, tipoFracao, condominioId, proprietarioId, inquilinoId
+                    );
 
-                // Associar os objetos relacionados
-                novaFracao.AssociarObjetos(condominio, proprietario, inquilino);
+                    novaFracao.AssociarObjetos(condominio, proprietario, inquilino);
 
-                // Adicionar à lista interna
-                _fracoes.Add(novaFracao);
+                    _fracoes.Add(novaFracao);
 
-                // Salvar no arquivo JSON
-                SalvarFracoes(_fracoes);
+                    // Salvar no arquivo JSON
+                    SalvarFracoes(_fracoes);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception($"Erro ao adicionar fração: {ex.Message}");
+                }
             }
-            catch (Exception ex)
-            {
-                throw new Exception($"Erro ao adicionar fração: {ex.Message}");
-            }
-        }
 
         // Método salvar os dados
         public void SalvarFracoes(List<FracaoAutonoma> fracoes)
@@ -153,14 +141,14 @@ namespace ProjCondominios.Services
             {
                 if (fracao.Condominio != null)
                 {
-                    fracao.CondominioId = fracao.Condominio.Id; // Sincroniza CondominioId com o objeto Condominio
+                    fracao.CondominioId = fracao.Condominio.Id; 
                 }
             }
         }
 
         // Método para listar todas as frações autónomas
         public List<FracaoAutonoma> ListarTodasFracoes()
-        {// Garante que as frações carregadas têm os objetos relacionados associados
+        {
             foreach (var fracao in _fracoes)
             {
                 if (fracao.Condominio == null)
@@ -172,9 +160,7 @@ namespace ProjCondominios.Services
                 if (fracao.Inquilino == null && fracao.InquilinoId.HasValue)
                     fracao.Inquilino = _condominoService.BuscarPorId(fracao.InquilinoId.Value);
             }
-
             return _fracoes ?? new List<FracaoAutonoma>();
-
         }
         
         // Método para listar condomínios
@@ -186,21 +172,16 @@ namespace ProjCondominios.Services
                 .Select(f => f.Condominio)
                 .Distinct();
 
-            // Retornar todos os condomínios, unindo os dois conjuntos
-            return todosCondominios
-                .Union(condominiosComFracoes)
-                .ToList();
+            return todosCondominios.Union(condominiosComFracoes).ToList();
         }
 
         // Método para listar frações por condominio
         public List<FracaoAutonoma> ListarFracoesPorCondominio(int condominioId)
         {
-            // Filtra as frações pelo CondomínioId especificado
             var fracoesFiltradas = _fracoes.Where(fracao => fracao.CondominioId == condominioId).ToList();
 
             foreach (var fracao in fracoesFiltradas)
             {
-                // Garante que os objetos relacionados estão associados
                 if (fracao.Condominio == null)
                     fracao.Condominio = _condominioService.ObterPorId(fracao.CondominioId);
 
@@ -210,20 +191,16 @@ namespace ProjCondominios.Services
                 if (fracao.Inquilino == null && fracao.InquilinoId.HasValue)
                     fracao.Inquilino = _condominoService.BuscarPorId(fracao.InquilinoId.Value);
             }
-
-            return fracoesFiltradas; // Retorna apenas as frações associadas ao condomínio
+            return fracoesFiltradas;
         }
 
         // Método para atualizar uma fração existente
-        public bool AtualizarFracao(string identificacao, decimal? novaArea = null, decimal? novaPermilagem = null,
-                            decimal? novaQuota = null, int? novoCondominioId = null,
-                            int? novoProprietarioId = null, int? novoInquilinoId = null)
+        public bool AtualizarFracao(string identificacao, decimal? novaArea = null, decimal? novaPermilagem = null, decimal? novaQuota = null, int? novoCondominioId = null,  int? novoProprietarioId = null, int? novoInquilinoId = null)
         {
             var fracao = _fracoes.FirstOrDefault(f => f.Identificacao == identificacao);
             if (fracao == null)
                 return false;
 
-            // Atualizar valores fornecidos
             if (novaArea.HasValue)
                 fracao.Area = novaArea.Value;
 
@@ -276,22 +253,17 @@ namespace ProjCondominios.Services
         // Método para remover uma fração pelo identificador
         public bool RemoverFracao(int condominioId, string identificacaoFracao)
         {
-            // Encontra a fração correspondente
             var fracao = _fracoes.FirstOrDefault(f =>
                 f.CondominioId == condominioId && f.Identificacao == identificacaoFracao);
 
             if (fracao != null)
             {
-                // Remove a fração da lista interna
                 _fracoes.Remove(fracao);
-
-                // Atualiza o arquivo JSON
                 _jsonFileService.SalvarFracoes(_fracoes);
 
-                return true; // Remoção bem-sucedida
+                return true; 
             }
-
-            return false; // Fração não encontrada
+            return false; 
         }
 
         // Método para calcular e atribuir a permilagem para cada fração em um condomínio específico

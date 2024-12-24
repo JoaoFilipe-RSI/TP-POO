@@ -53,7 +53,6 @@ namespace ProjCondominios.Services
             _reservas.Add(reserva);
         }
 
-
         public void CancelarReserva(Guid id)
         {
             var reserva = _reservas.FirstOrDefault(r => r.Id == id);

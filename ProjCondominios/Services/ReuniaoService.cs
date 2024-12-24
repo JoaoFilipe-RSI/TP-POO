@@ -45,7 +45,6 @@ namespace ProjCondominios.Services
             _reunioes.Remove(reuniao);
         }
 
-        // Método para atualizar uma reunião existente
         // Método para atualizar uma reunião existente, usando apenas a instância atualizada.
         public void AtualizarReuniao(Reuniao reuniaoAtualizada)
         {
@@ -57,7 +56,6 @@ namespace ProjCondominios.Services
             if (reuniaoExistente == null)
                 throw new KeyNotFoundException("Reunião não encontrada para atualizar.");
 
-            // Atualiza os campos
             reuniaoExistente.DataHora = reuniaoAtualizada.DataHora;
             reuniaoExistente.Local = reuniaoAtualizada.Local;
             reuniaoExistente.Pauta = reuniaoAtualizada.Pauta;

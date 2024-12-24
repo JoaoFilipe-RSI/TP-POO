@@ -57,8 +57,6 @@ namespace CalculadoraFinanceira
                 total += valor;
             }
             return total;
-        }
-        
-        // Outros métodos...
+        }       
     }
 }

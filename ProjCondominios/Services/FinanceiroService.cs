@@ -10,8 +10,7 @@ using CalculadoraFinanceira; // Referência à DLL
 
 
 namespace ProjCondominios.Services
-{
-    
+{    
     public class FinanceiroService
     {
         #region Propriedades Privadas
@@ -96,10 +95,9 @@ namespace ProjCondominios.Services
 
             return relatorio;
         }
-        #endregion
 
         // Relatórios detalhados por período (por exemplo, despesas e receitas mensais).
         // Notificações de saldo negativo, caso as despesas superem os pagamentos.
-
+        #endregion
     }
 }

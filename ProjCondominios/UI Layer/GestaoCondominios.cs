@@ -25,13 +25,13 @@ namespace ProjCondominios.UI_Layer
             InitializeComponent();
             ConfigurarTamanho();
         }
-
         private void ConfigurarTamanho()
         {
             this.Size = _menuPrincipal.Size; 
             this.StartPosition = FormStartPosition.Manual; 
             this.Location = _menuPrincipal.Location; 
         }
+
         private void CarregarFormularioAdicionar()
         {
             pnlConteudo.Controls.Clear();
@@ -169,11 +169,5 @@ namespace ProjCondominios.UI_Layer
         {
             this.Close();
         }
-
-        private void pnlMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
     }
 }

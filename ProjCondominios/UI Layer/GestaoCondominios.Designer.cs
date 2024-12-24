@@ -52,7 +52,6 @@
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(209, 450);
             pnlMenu.TabIndex = 0;
-            pnlMenu.Paint += pnlMenu_Paint;
             // 
             // BtnFechar
             // 

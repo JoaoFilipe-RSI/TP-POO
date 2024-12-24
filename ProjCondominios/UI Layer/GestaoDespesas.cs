@@ -42,6 +42,7 @@ namespace ProjCondominios.UI_Layer
             this.StartPosition = FormStartPosition.Manual; // Define a posição manualmente
             this.Location = _menuPrincipal.Location; // Ajusta a localização para coincidir com o MenuPrincipal
         }
+
         private void ConfigurarPainelConteudo()
         {
             pnlConteudo.Controls.Clear();
@@ -168,7 +169,7 @@ namespace ProjCondominios.UI_Layer
             txtValor.Text = despesa.Valor.ToString();
             dtpData.Value = despesa.DataHoraDespesa;
 
-            _despesaService.RemoverDespesa(id); // Remove a despesa para substituí-la
+            _despesaService.RemoverDespesa(id); 
             MessageBox.Show("Edite os campos e clique em 'Adicionar' para salvar as alterações.");
         }
 

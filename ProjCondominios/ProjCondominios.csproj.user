@@ -19,6 +19,9 @@
     <Compile Update="UI Layer\GestaoPagamentos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI Layer\GestaoRelatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI Layer\GestaoReservas.cs">
       <SubType>Form</SubType>
     </Compile>

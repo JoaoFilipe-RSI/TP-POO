@@ -10,9 +10,11 @@ namespace ProjCondominios.Models
 {
     public class Condomino
     {
+        #region Propriedades privadas
         //  gerar IDs únicos
         private static int _nextId = 1;
 
+        #endregion
         #region Propriedades Públicas
         public int Id { get; set; }
         public string Nome { get; set; }
